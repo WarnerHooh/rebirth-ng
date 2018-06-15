@@ -40,10 +40,10 @@ import {
   EllipsisDemoModule,
   TagsDemoModule,
   ImageUploadDemoModule,
-    SelectDemoModule,
-    SliderDemoModule,
-    ButtonDemoModule,
-    InputDemoModule,
+  SelectDemoModule,
+  SliderDemoModule,
+  ButtonDemoModule,
+  InputDemoModule,
   // module declare
 } from './demo';
 import { RebirthNGModule } from 'rebirth-ng';
@@ -55,18 +55,20 @@ import { GettingStartedComponent, ShowcaseComponent } from './feature';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RebirthRouterReuseStrategy } from 'rebirth-ng';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
-import { environment } from '../environments/environment';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { AppContentComponent } from './feature/app-content.component';
+import { AccordionModule } from 'ngx-accordion';
 
 @NgModule({
   declarations: [
     AppComponent,
     GettingStartedComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    AppContentComponent
   ],
   imports: [
     BrowserModule,
     // ServiceWorkerModule.register('/rebirth-ng/ngsw-worker.js', { enabled: environment.production }),
+    AccordionModule,
     HttpClientModule,
     HttpClientJsonpModule,
     RouterModule.forRoot(ROUTER_CONFIG),
@@ -116,8 +118,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     // module declare
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
-    { provide: RouteReuseStrategy, useClass: RebirthRouterReuseStrategy }
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+    {provide: RouteReuseStrategy, useClass: RebirthRouterReuseStrategy}
   ],
   bootstrap: [AppComponent]
 })

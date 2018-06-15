@@ -104,6 +104,7 @@
   },
   "dependencies": {
     "date-fns": "^1.27.2",
+    "ngx-accordion": "0.0.17",
     "rebirth-ng": "^6.0.3"
   },
   "description": "> Angular UI plugin with bootstrap;",

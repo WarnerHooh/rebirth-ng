@@ -1,17 +1,233 @@
-:host ::ng-deep .main {
-  margin-top: 80px;
+html {
+  overflow: hidden;
 }
 
-::ng-deep {
+html, body {
+  background: #fafafa;
+  font-family: "微软雅黑", "Roboto", "Helvetica", "Arial", sans-serif;
+}
 
-  .button-panel {
-    button {
-      margin: 1rem;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  .app-bar {
+    position: relative;
+    top: 0;
+    z-index: 1500;
+  }
+
+  header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    background: #56c3f6;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    a {
+      color: #fafafa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fafafa;
+      text-decoration: underline;
     }
   }
-  re-action-button, re-select-button, re-switch {
-    padding: 1rem;
+
+  h1.title {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    width: 240px;
+    padding: 15px 32px;
+    box-sizing: border-box;
+    .logo, .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .ui {
+      font-weight: normal;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav-right{
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .main-nav-item {
+    font-size: 15px;
+    display: block;
+    padding: 5px 0;
+    margin: 0 12px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.active {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .docs-header {
+    background: #56c3f6;
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      margin: 0;
+      padding: 50px;
+      color: #fff;
+    }
+  }
+
+  .side-nav-container {
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    .sidebar {
+      float: left;
+      width: 240px;
+      box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+      max-height: 100vh;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 2;
+      background: #fff;
+    }
+
+    .doc-viewer-container {
+      z-index: 3;
+      max-height: 100vh;
+      overflow-y: auto;
+      padding-bottom: 50px;
+      .main{
+        padding: 80px;
+      }
+    }
+
+  }
+
+  .tabNav {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  :host /deep/ .ave-doc-tabs {
+    a[role='tab'] {
+      padding: 0;
+      padding-left: 15px;
+      line-height: 2.5;
+    }
+  }
+
+  .side-nav {
+    background: #fff;
+    padding-bottom: 72px;
+
+    .list-group {
+      margin-bottom: 0;
+      .list-group-item {
+        &:hover, &:active {
+          background: #e6eaef;
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    .panel-body {
+      padding: 0;
+      background-color: #f1f3f6;
+    }
+
+    .panel-title {
+      font-size: 16px;
+      margin: 0;
+      position: relative;
+      line-height: 28px;
+    }
+
+    .panel > .panel-heading, .panel.panel-default > .panel-heading {
+      background: #fff;
+    }
+
+    .panel {
+      box-shadow: none;
+    }
+
+    [class*="panel-"] > .panel-heading {
+      border-bottom: 1px solid #f3f3f3;
+      cursor: pointer;
+      &:hover {
+        color: #56c3f6;
+      }
+    }
+
+    .caret {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .panel-group .panel-heading + .panel-collapse > .panel-body {
+      border: none;
+    }
+  }
+
+  .side-nav .list-group li > a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 47px;
+    text-decoration: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding: 0 32px;
+    position: relative;
+    outline: none;
+    color: #000;
+    background-color: transparent;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .side-nav li {
+    a:hover, a:focus {
+      background: #e6eaef;
+    }
+  }
+
+  .side-nav .list-group-item.active {
+    &:hover, &.active {
+      outline: none;
+      color: #56c3f6;
+      font-weight: bold;
+      background: none;
+    }
+  }
+
+  .examples-viewer {
+    margin: 50px 70px;
   }
 }
-
-

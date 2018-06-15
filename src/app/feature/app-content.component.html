@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="side-nav-container">
+    <div class="sidebar">
+      <nav class="side-nav">
+        <accordion [showArrows]="true" [closeOthers]="true" [expandAll]="true">
+          <div>
+            <accordion-group>
+              <accordion-heading>
+                <strong>core</strong>
+              </accordion-heading>
+              <ul class="list-group">
+                <li *ngFor="let cmp of coreComponents">
+                  <a [routerLink]="['/component',cmp.name]" routerLinkActive="active" class="list-group-item">{{
+                    cmp.name}}</a>
+                </li>
+              </ul>
+            </accordion-group>
+          </div>
+        </accordion>
+
+      </nav>
+    </div>
+    <div class="doc-viewer-container">
+      <div class="main">
+        <re-doc *ngIf="currentComponent" [component]="currentComponent[0]"></re-doc>
+      </div>
+    </div>
+  </div>
+</div>
