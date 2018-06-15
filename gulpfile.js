@@ -92,7 +92,7 @@ gulp.task('new:config:demo-service', function () {
       name: '${cmpGenConfig.componentName}',
       directory: '${cmpGenConfig.componentSelector}',
       cmp: ${cmpGenConfig.componentName}DemoComponent,
-      readMe: require('!html-loader!markdown-loader!../../exports/${cmpGenConfig.componentSelector}/README.md'),
+      readMe: require('!html-loader!markdown-loader!../../demo/${cmpGenConfig.componentSelector}/README.md'),
       html: require('!raw-loader!../../demo/${cmpGenConfig.componentSelector}/${cmpGenConfig.componentSelector}-demo.component.html'),
       ts: require('!raw-loader!../../demo/${cmpGenConfig.componentSelector}/${cmpGenConfig.componentSelector}-demo.component.ts'),
     },`
@@ -110,25 +110,25 @@ gulp.task('new:config:demo-index', function () {
 });
 
 gulp.task('new:config:exports-index', function () {
-  gulp.src('./src/app/exports/index.ts')
-    .pipe(insertLines({
-      'before': /\/\/\scomponent\sexport/i,
-      'lineBefore': `export * from './${cmpGenConfig.componentSelector}';`
-    }))
-    .pipe(gulp.dest('./src/app/exports', {overwrite: true}));
+  // gulp.src('./src/app/exports/index.ts')
+  //   .pipe(insertLines({
+  //     'before': /\/\/\scomponent\sexport/i,
+  //     'lineBefore': `export * from './${cmpGenConfig.componentSelector}';`
+  //   }))
+  //   .pipe(gulp.dest('./src/app/exports', {overwrite: true}));
 });
 
 gulp.task('new:config:rebirth-module', function () {
-  gulp.src('./src/app/exports/rebirth-ng.module.ts')
-    .pipe(insertLines({
-      'before': /\/\/\smodule\simport/gi,
-      'lineBefore': `import { ${cmpGenConfig.componentName}Module } from './${cmpGenConfig.componentSelector}';`
-    }))
-    .pipe(insertLines({
-      'before': /\/\/\smodule\sdeclare/i,
-      'lineBefore': `    ${cmpGenConfig.componentName}Module,`
-    }))
-    .pipe(gulp.dest('./src/app/exports', {overwrite: true}));
+  // gulp.src('./src/app/exports/rebirth-ng.module.ts')
+  //   .pipe(insertLines({
+  //     'before': /\/\/\smodule\simport/gi,
+  //     'lineBefore': `import { ${cmpGenConfig.componentName}Module } from './${cmpGenConfig.componentSelector}';`
+  //   }))
+  //   .pipe(insertLines({
+  //     'before': /\/\/\smodule\sdeclare/i,
+  //     'lineBefore': `    ${cmpGenConfig.componentName}Module,`
+  //   }))
+  //   .pipe(gulp.dest('./src/app/exports', {overwrite: true}));
 });
 
 gulp.task('new:config:app-module', function () {
@@ -161,14 +161,14 @@ gulp.task('new:demo', function () {
 });
 
 gulp.task('new:lib', ['new:demo', 'new:config'], function () {
-  gulp.src(`${config.newCmpTmpl}/exports/*.*`)
-    .pipe(rename(function (path) {
-      if (path.basename.indexOf('$template$') !== -1) {
-        path.basename = path.basename.replace('$template$', cmpGenConfig.componentSelector);
-      }
-    }))
-    .pipe(ejs(cmpGenConfig))
-    .pipe(gulp.dest(`./src/app/exports/${cmpGenConfig.componentSelector}`));
+  // gulp.src(`${config.newCmpTmpl}/exports/*.*`)
+  //   .pipe(rename(function (path) {
+  //     if (path.basename.indexOf('$template$') !== -1) {
+  //       path.basename = path.basename.replace('$template$', cmpGenConfig.componentSelector);
+  //     }
+  //   }))
+  //   .pipe(ejs(cmpGenConfig))
+  //   .pipe(gulp.dest(`./src/app/exports/${cmpGenConfig.componentSelector}`));
 });
 
 gulp.task('new:cmp', function (cb) {

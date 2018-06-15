@@ -36,4 +36,6 @@ export * from './tree-view';
 export * from './validators';
 export * from './select';
 export * from './slider';
+export * from './button';
+export * from './input';
 // component export

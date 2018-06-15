@@ -1,10 +1,9 @@
 import { Component, OnInit, ViewContainerRef, Renderer2, ElementRef } from '@angular/core';
-import { RebirthNGConfig } from './exports/rebirth-ng.config';
 import { DemoConfigService } from './shared/demo/demo-config.service';
-import { MenuBar } from './exports/menu-bar/menu-bar.model';
+import { MenuBar, RebirthNGConfig } from 'rebirth-ng';
 import { ThemeService } from './shared';
 import { DomSanitizer } from '@angular/platform-browser';
-// import { REBIRTH_NG_I18N_ZHCN } from './exports';
+import { REBIRTH_NG_I18N_ZHCN } from 'rebirth-ng';
 
 @Component({
   selector: 're-app',
@@ -25,7 +24,7 @@ export class AppComponent implements OnInit {
               private domSanitizer: DomSanitizer) {
 
     this.rebirthConfig.rootContainer = this.viewContainerRef;
-    // this.rebirthConfig.extend(REBIRTH_NG_I18N_ZHCN);  // i18n
+    this.rebirthConfig.extend(REBIRTH_NG_I18N_ZHCN);  // i18n
   }
 
   ngOnInit(): void {

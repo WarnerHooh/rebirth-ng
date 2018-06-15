@@ -1,7 +1,6 @@
 {
-  "name": "rebirth-ng",
-  "version": "6.0.3",
-  "license": "MIT",
+  "name": "rebirth-story-book",
+  "version": "1.0.0",
   "angular-cli": {},
   "main": "index.js",
   "typings": "index.d.ts",
@@ -22,12 +21,9 @@
     "compodocs:serve": "compodoc ./src/app/exports/ -p ./src/tsconfig.json -b / -d ./compodocs/ --hideGenerator -s",
     "compodocs:gen": "compodoc ./src/app/exports/ -t -p ./src/tsconfig.app.json -b /rebirth-ng/compodocs/ -d ./dist/compodocs/ --hideGenerator",
     "demo:gen": "ng build --prod --aot --base-href=/rebirth-ng/",
-    "github-pages:push": "ngh --message \"rebirth ng demo deploy\"",
-    "sw:gen": "gulp sw:gen",
-    "docs:deploy": "npm run demo:gen && npm run compodocs:gen && npm run github-pages:push && rm -rf ./dist",
-    "npm:publish": "rm -rf ./dist && gulp prepublish"
+    "sw:gen": "gulp sw:gen"
   },
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/greengerong/rebirth-ng.git"
@@ -107,7 +103,8 @@
     "web-animations-js": "^2.3.1"
   },
   "dependencies": {
-    "date-fns": "^1.27.2"
+    "date-fns": "^1.27.2",
+    "rebirth-ng": "^6.0.3"
   },
   "description": "> Angular UI plugin with bootstrap;",
   "bugs": {
