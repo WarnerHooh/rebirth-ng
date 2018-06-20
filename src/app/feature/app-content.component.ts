@@ -1,9 +1,10 @@
-import { Component, HostBinding, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { DemoConfigService } from '../shared/demo';
 import { DocumentRef } from 'rebirth-ng';
 import { DomSanitizer } from '@angular/platform-browser';
+import { highlightCodeBlock } from '../shared/doc/hightlight';
 
 
 @Component({
@@ -18,7 +19,8 @@ export class AppContentComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute,
               private documentRef: DocumentRef,
               private demoConfigService: DemoConfigService,
-              private domSanitizer: DomSanitizer) {
+              private domSanitizer: DomSanitizer,
+              private renderer: Renderer2) {
 
     this.coreComponents = this.demoConfigService.components
       .sort((a, b) => a.name.localeCompare(b.name));
@@ -33,7 +35,12 @@ export class AppContentComponent implements OnInit {
           return cmp.name === params.name;
         })
         .map((cmp) => {
+          cmp.html = highlightCodeBlock(this.renderer, cmp.html);
+          cmp.ts = highlightCodeBlock(this.renderer, cmp.ts);
           cmp.readMe = this.domSanitizer.bypassSecurityTrustHtml(cmp.readMe);
+
+          const dataJson = cmp.data ? JSON.stringify(cmp.data, null, 2) : '';
+          cmp.data = highlightCodeBlock(this.renderer, dataJson);
           return cmp;
         });
     });
