@@ -59,7 +59,6 @@ import { AccordionModule } from 'ngx-accordion';
 import { GettingStartedComponent } from './feature/getting-started';
 import { ShowcaseComponent } from './feature/show-case';
 import { DesignGuidelineModule } from './feature/design-guideline/design-guideline.module';
-import { PrincipleComponent } from './feature/design-guideline/principle/principle.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +66,6 @@ import { PrincipleComponent } from './feature/design-guideline/principle/princip
     GettingStartedComponent,
     ShowcaseComponent,
     ComponentsComponent,
-    PrincipleComponent,
   ],
   imports: [
     BrowserModule,

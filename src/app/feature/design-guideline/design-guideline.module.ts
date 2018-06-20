@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DesignGuidelineComponent } from './design-guideline.component';
 import { RouterModule } from '@angular/router';
-import { ROUTER_CONFIG } from './design-guideline.route';
 import { AccordionModule } from 'ngx-accordion';
+import { ROUTER_CONFIG } from './design-guideline.route';
 
 @NgModule({
   imports: [
     CommonModule,
     AccordionModule,
-    RouterModule.forChild(ROUTER_CONFIG),
+    RouterModule.forChild(ROUTER_CONFIG)
   ],
   declarations: [
     DesignGuidelineComponent,
@@ -18,4 +18,5 @@ import { AccordionModule } from 'ngx-accordion';
     DesignGuidelineComponent,
   ]
 })
-export class DesignGuidelineModule { }
+export class DesignGuidelineModule {
+}

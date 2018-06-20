@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { DemoConfigService } from '../../shared/demo/demo-config.service';
 import { DomSanitizer } from '@angular/platform-browser';
+import { DocumentRef } from 'rebirth-ng';
 
 @Component({
   selector: 're-getting-started',
@@ -11,6 +12,7 @@ export class GettingStartedComponent implements OnInit {
   gettingStarted: any;
 
   constructor(private demoConfigService: DemoConfigService, private domSanitizer: DomSanitizer) {
+
   }
 
   ngOnInit() {

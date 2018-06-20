@@ -1,0 +1,36 @@
+::ng-deep {
+  .md-content {
+    h1, h2, h3, h4, h5, h6 {
+      color: #0074e4;
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      color: #333333;
+      font-size: 18px;
+    }
+
+    ul li {
+      color: #666666;
+      font-size: 14px;
+      list-style-position: inside;
+    }
+
+    .bullet {
+      color: #91ceff;
+      margin-right: 6px;
+    }
+
+    p, ul {
+      margin-left: 30px;
+      padding: 0;
+    }
+  }
+}

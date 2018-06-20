@@ -106,7 +106,7 @@ html, body {
     .sidebar {
       float: left;
       width: 240px;
-      box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+      border-right: 1px solid #e5e5e5;
       height: 100vh;
       overflow-y: auto;
       z-index: 2;
