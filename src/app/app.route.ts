@@ -7,6 +7,6 @@ import { DesignGuidelineComponent } from './feature/design-guideline/design-guid
 export const ROUTER_CONFIG: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/gettingStarted' },
   { path: 'gettingStarted', component: GettingStartedComponent, data: { reusable: true } },
-  { path: 'design-guideline/:name', component: DesignGuidelineComponent, data: { reusable: true } },
+  { path: 'design-guideline/:name', component: DesignGuidelineComponent},
   { path: 'component/:name', component: ComponentsComponent, data: { reusable: true } },
 ];

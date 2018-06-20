@@ -27,8 +27,6 @@ export class ComponentsComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: Params) => {
-      this.documentRef.body.scrollTop = 0;
-
       this.currentComponent = this.demoConfigService.components
         .filter(cmp => {
           return cmp.name === params.name;

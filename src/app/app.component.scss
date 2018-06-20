@@ -79,6 +79,7 @@ ul {
 
   .side-nav-container {
     display: flex;
+    flex: 1;
   }
 
   .sidebar {
@@ -97,7 +98,7 @@ ul {
     overflow-y: auto;
     padding-bottom: 50px;
     .main{
-      padding: 80px;
+      padding: 40px 60px;
     }
   }
 }

@@ -1,7 +1,9 @@
+@import "../../../styles/variables";
+
 ::ng-deep {
   .md-content {
     h1, h2, h3, h4, h5, h6 {
-      color: #0074e4;
+      color: $ds-color-primary;
     }
 
     h1 {
@@ -13,23 +15,18 @@
     }
 
     p {
-      color: #333333;
+      color: $ds-color-text;
       font-size: 18px;
     }
 
     ul li {
-      color: #666666;
+      color: $ds-color-text-light;
       font-size: 14px;
       list-style-position: inside;
     }
 
-    .bullet {
-      color: #91ceff;
-      margin-right: 6px;
-    }
-
     p, ul {
-      margin-left: 30px;
+      margin-left: 24px;
       padding: 0;
     }
   }
