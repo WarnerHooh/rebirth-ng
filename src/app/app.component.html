@@ -1,41 +1,30 @@
 <div class="app-container">
   <div class="app-bar">
-    <header [style.background]="route!=='/home'?'#56c3f6':'none'"
-            [style.box-shadow]="route!=='/home'?'':'none'">
+    <header>
       <h1 class="title">
         <a href="#">
-                    <span class="logo">
-                        <svg width="25px" height="25px" viewBox="0 0 430 430" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="设计" fill-rule="nonzero" fill="#FFFFFF">
-            <path
-              d="M198.291537,315.785652 L198.291537,231.856664 L119.398298,270.4644 L198.291537,315.785652 Z M198.291537,206.677918 L198.291537,149.606423 L136.183802,236.892903 L198.291537,206.677918 Z M215.07704,0.212697249 C96.4142715,0.212697249 0.219067283,96.4083913 0.219067283,215.07067 C0.219067283,333.73393 96.4142715,429.928643 215.07704,429.928643 C333.739809,429.928643 429.935503,333.73393 429.935503,215.07067 C429.935503,96.4083913 333.7403,0.212697249 215.07704,0.212697249 Z M215.07704,362.786139 L67.3620613,278.857152 L215.07704,65.6774348 L362.792019,278.857151 L215.07704,362.786139 Z M231.863034,231.856664 L231.863034,315.785652 L310.756272,270.4644 L231.863034,231.856664 Z M231.863034,149.606423 L231.863034,206.678409 L293.970279,236.892903 L231.863034,149.606423 Z"
-              id="Shape"></path>
-        </g>
-    </g>
-</svg>
-                        </span>
-          <span class="text">AVENUE <span class="ui">UI</span></span>
+          <img src="assets/images/design-logo.svg">
         </a>
       </h1>
       <div class="main-nav">
         <a class='main-nav-item' routerLink="/gettingStarted" routerLinkActive="active">
-          <span>GUIDE</span>
+          <span>首页</span>
+        </a>
+        <a class='main-nav-item' routerLink="/design" routerLinkActive="active">
+          <span>设计</span>
         </a>
         <a class='main-nav-item' routerLink="/component/Accordion" routerLinkActive="active">
-          <span>COMPONENTS</span>
+          <span>组件</span>
         </a>
         <a class="main-nav-item" target="_blank" href="/apidoc/" routerLinkActive="active">
-          <span>APIDOC</span>
+          <span>动效</span>
         </a>
       </div>
-      <div class="main-nav-right">
-        <a class="main-nav-item">
-          <span>rebirth-ng@{{pkg.version}}</span>
-        </a>
-      </div>
+      <!--<div class="main-nav-right">-->
+        <!--<a class="main-nav-item">-->
+          <!--<span>rebirth-ng@{{pkg.version}}</span>-->
+        <!--</a>-->
+      <!--</div>-->
     </header>
   </div>
   <router-outlet></router-outlet>

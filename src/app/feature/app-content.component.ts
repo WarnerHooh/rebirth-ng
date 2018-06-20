@@ -6,7 +6,6 @@ import { DocumentRef } from 'rebirth-ng';
 import { DomSanitizer } from '@angular/platform-browser';
 import { highlightCodeBlock } from '../shared/doc/hightlight';
 
-
 @Component({
   selector: 're-app-content', // tslint:disable-line
   templateUrl: './app-content.component.html',

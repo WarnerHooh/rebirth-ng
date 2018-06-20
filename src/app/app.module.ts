@@ -51,12 +51,13 @@ import { RouteReuseStrategy, RouterModule } from '@angular/router';
 // NoopAnimationsModule
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ROUTER_CONFIG } from './app.route';
-import { GettingStartedComponent, ShowcaseComponent } from './feature';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RebirthRouterReuseStrategy } from 'rebirth-ng';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { AppContentComponent } from './feature/app-content.component';
 import { AccordionModule } from 'ngx-accordion';
+import { GettingStartedComponent } from './feature/getting-started';
+import { ShowcaseComponent } from './feature/show-case';
 
 @NgModule({
   declarations: [

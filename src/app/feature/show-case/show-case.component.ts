@@ -1,9 +1,9 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import { DemoConfigService } from '../shared/demo/demo-config.service';
+import { DemoConfigService } from '../../shared/demo/demo-config.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Params } from '@angular/router';
 import { DocumentRef } from 'rebirth-ng';
-import { fixTSModuleImport, highlightCodeBlock } from '../shared/doc/hightlight';
+import { fixTSModuleImport, highlightCodeBlock } from '../../shared/doc/hightlight';
 
 @Component({
   selector: 're-show-case',

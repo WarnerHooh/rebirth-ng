@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { GettingStartedComponent } from './feature';
 import { AppContentComponent } from './feature/app-content.component';
+import { GettingStartedComponent } from './feature/getting-started';
 
 
 export const ROUTER_CONFIG: Routes = [

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DemoConfigService } from '../shared/demo/demo-config.service';
+import { DemoConfigService } from '../../shared/demo/demo-config.service';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
