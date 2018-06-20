@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { ComponentsComponent } from './feature/components/components.component';
+import { ComponentsComponent } from './feature/components';
 import { GettingStartedComponent } from './feature/getting-started';
-import { DesignGuidelineComponent } from './feature/design-guideline';
+import { DesignGuidelineComponent } from './feature/design-guideline/design-guideline.component';
 
 
 export const ROUTER_CONFIG: Routes = [

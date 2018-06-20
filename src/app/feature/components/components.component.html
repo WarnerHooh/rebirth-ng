@@ -10,8 +10,10 @@
               </accordion-heading>
               <ul class="list-group">
                 <li *ngFor="let cmp of coreComponents">
-                  <a [routerLink]="['/component',cmp.name]" routerLinkActive="active" class="list-group-item">{{
-                    cmp.name}}</a>
+                  <a [routerLink]="['/component',cmp.name]" routerLinkActive="active" class="list-group-item">
+                    <span>{{cmp.name}}</span>
+                    <i></i>
+                  </a>
                 </li>
               </ul>
             </accordion-group>

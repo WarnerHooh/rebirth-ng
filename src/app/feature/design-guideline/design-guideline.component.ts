@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DesignGuidelineComponent implements OnInit {
 
-  constructor() { }
+  guideline: any[];
+
+  constructor() {
+    this.guideline = [
+      {name: 'principle', title: '原则'},
+      {name: 'layout', title: '布局'},
+      {name: 'color', title: '颜色'},
+      {name: 'icon', title: '图标'},
+      {name: 'prototype', title: '排版'},
+      {name: 'text', title: '文案'},
+    ];
+  }
 
   ngOnInit() {
   }
