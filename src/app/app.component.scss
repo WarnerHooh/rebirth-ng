@@ -46,7 +46,7 @@ ul {
     margin: 0;
 
     img {
-      width: 240px;
+      width: 280px;
       height: 39px;
     }
   }
@@ -64,7 +64,7 @@ ul {
   .main-nav-item {
     font-size: 18px;
     display: block;
-    padding: 15px 32px;
+    padding: 18px 32px;
 
     &.active {
       background-color: rgba(255, 255, 255, 0.2);
@@ -83,7 +83,7 @@ ul {
   }
 
   .sidebar {
-    width: 240px;
+    width: 300px;
     height: 100vh;
     overflow-y: auto;
     z-index: 2;
@@ -114,10 +114,10 @@ ul {
     .list-group-item {
       display: block;
       font-size: 14px;
-      line-height: 47px;
+      line-height: 44px;
       text-decoration: none;
       transition: all .2s;
-      padding: 0 32px;
+      padding: 0 52px;
       position: relative;
       outline: none;
       color: $ds-color-text;
@@ -132,7 +132,7 @@ ul {
 
       &.active {
         border-left: 8px solid $ds-color-primary;
-        padding-left: 24px;
+        padding-left: 44px;
       }
     }
   }
