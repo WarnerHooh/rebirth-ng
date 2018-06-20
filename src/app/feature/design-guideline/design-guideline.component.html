@@ -3,22 +3,20 @@
     <div class="sidebar">
       <nav class="side-nav">
         <accordion [showArrows]="true" [closeOthers]="true" [expandAll]="true">
-          <div>
-            <accordion-group>
-              <accordion-heading>
-                <strong>设计</strong>
-                <i>Design Guideline</i>
-              </accordion-heading>
-              <ul class="list-group">
-                <li *ngFor="let gl of guideline">
-                  <a [routerLink]="['/design-guideline', gl.name]" routerLinkActive="active" class="list-group-item">
-                    <span>{{gl.title}}</span>
-                    <i>{{gl.name}}</i>
-                  </a>
-                </li>
-              </ul>
-            </accordion-group>
-          </div>
+          <accordion-group>
+            <accordion-heading>
+              <strong>设计</strong>
+              <span class="title-en">Design Guideline</span>
+            </accordion-heading>
+            <ul class="list-group">
+              <li *ngFor="let gl of guideline">
+                <a [routerLink]="['/design-guideline', gl.name]" routerLinkActive="active" class="list-group-item">
+                  <span class="title">{{gl.title}}</span>
+                  <span class="title-en">{{gl.name}}</span>
+                </a>
+              </li>
+            </ul>
+          </accordion-group>
         </accordion>
 
       </nav>
