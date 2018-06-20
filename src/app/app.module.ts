@@ -54,17 +54,19 @@ import { ROUTER_CONFIG } from './app.route';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RebirthRouterReuseStrategy } from 'rebirth-ng';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
-import { AppContentComponent } from './feature/app-content.component';
+import { ComponentsComponent } from './feature/components';
 import { AccordionModule } from 'ngx-accordion';
 import { GettingStartedComponent } from './feature/getting-started';
 import { ShowcaseComponent } from './feature/show-case';
+import { DesignGuidelineComponent } from './feature/design-guideline';
 
 @NgModule({
   declarations: [
     AppComponent,
     GettingStartedComponent,
     ShowcaseComponent,
-    AppContentComponent
+    ComponentsComponent,
+    DesignGuidelineComponent
   ],
   imports: [
     BrowserModule,

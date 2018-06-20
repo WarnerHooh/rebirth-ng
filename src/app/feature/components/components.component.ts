@@ -1,17 +1,17 @@
 import { Component, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 
 import { ActivatedRoute, Params } from '@angular/router';
-import { DemoConfigService } from '../shared/demo';
+import { DemoConfigService } from '../../shared/demo/index';
 import { DocumentRef } from 'rebirth-ng';
 import { DomSanitizer } from '@angular/platform-browser';
-import { highlightCodeBlock } from '../shared/doc/hightlight';
+import { highlightCodeBlock } from '../../shared/doc/hightlight';
 
 @Component({
   selector: 're-app-content', // tslint:disable-line
-  templateUrl: './app-content.component.html',
+  templateUrl: './components.component.html',
   encapsulation: ViewEncapsulation.None,
 })
-export class AppContentComponent implements OnInit {
+export class ComponentsComponent implements OnInit {
   coreComponents: any;
   currentComponent: any;
 
