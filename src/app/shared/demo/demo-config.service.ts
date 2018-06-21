@@ -50,9 +50,10 @@ export class DemoConfigService {
     readMe: require('!html-loader!markdown-loader!../../README.md')
   };
 
-  components: { name: string, cmp: Type<any>, directory?: string, readMe?: any, html?: string, ts?: string, data?: any }[] = [
+  components: { name: string, title?: string, cmp: Type<any>, directory?: string, readMe?: any, html?: string, ts?: string, data?: any }[] = [
     {
       name: 'Modal',
+      title: '模态框',
       directory: 'modal',
       cmp: ModalDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/modal/README.md'),
@@ -61,6 +62,7 @@ export class DemoConfigService {
     },
     {
       name: 'Dialog',
+      title: '对话框',
       directory: 'dialog',
       cmp: DialogDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/dialog/README.md'),
@@ -69,6 +71,7 @@ export class DemoConfigService {
     },
     {
       name: 'AlertBox',
+      title: '弹窗',
       directory: 'alert-box',
       cmp: AlertBoxDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/alert-box/README.md'),
@@ -77,6 +80,7 @@ export class DemoConfigService {
     },
     {
       name: 'Badge',
+      title: '徽标',
       directory: 'badge',
       cmp: BadgeDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/badge/README.md'),
@@ -85,6 +89,7 @@ export class DemoConfigService {
     },
     {
       name: 'Pagination',
+      title: '分页',
       directory: 'pagination',
       cmp: PaginationDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/pagination/README.md'),
@@ -93,6 +98,7 @@ export class DemoConfigService {
     },
     {
       name: 'Pager',
+      title: '分页',
       directory: 'pager',
       cmp: PagerDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/pager/README.md'),
@@ -101,6 +107,7 @@ export class DemoConfigService {
     },
     {
       name: 'Panel',
+      title: '面板',
       directory: 'panel',
       cmp: PanelDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/panel/README.md'),
@@ -109,6 +116,7 @@ export class DemoConfigService {
     },
     {
       name: 'Accordion',
+      title: '折叠面板',
       directory: 'accordion',
       cmp: AccordionDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/accordion/README.md'),
@@ -117,6 +125,7 @@ export class DemoConfigService {
     },
     {
       name: 'ActionButton',
+      title: '动作按钮',
       directory: 'action-button',
       cmp: ActionButtonDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/action-button/README.md'),
@@ -125,6 +134,7 @@ export class DemoConfigService {
     },
     {
       name: 'Rating',
+      title: '评分',
       directory: 'rating',
       cmp: RatingDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/rating/README.md'),
@@ -133,6 +143,7 @@ export class DemoConfigService {
     },
     {
       name: 'Tabs',
+      title: '标签',
       directory: 'tabs',
       cmp: TabsDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/tabs/README.md'),
@@ -141,6 +152,7 @@ export class DemoConfigService {
     },
     {
       name: 'Tooltip',
+      title: '提示',
       directory: 'tooltip',
       cmp: TooltipDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/tooltip/README.md'),
@@ -149,6 +161,7 @@ export class DemoConfigService {
     },
     {
       name: 'Popover',
+      title: '气泡',
       directory: 'popover',
       cmp: PopoverDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/popover/README.md'),
@@ -157,6 +170,7 @@ export class DemoConfigService {
     },
     {
       name: 'DatePicker',
+      title: '日期选择',
       directory: 'date-picker',
       cmp: DatePickerDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/date-picker/README.md'),
@@ -165,6 +179,7 @@ export class DemoConfigService {
     },
     {
       name: 'Breadcrumbs',
+      title: '面包屑',
       directory: 'breadcrumbs',
       cmp: BreadcrumbsDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/breadcrumbs/README.md'),
@@ -173,6 +188,7 @@ export class DemoConfigService {
     },
     {
       name: 'ProgressBar',
+      title: '进度条',
       directory: 'progress-bar',
       cmp: ProgressBarDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/progress-bar/README.md'),
@@ -181,6 +197,7 @@ export class DemoConfigService {
     },
     {
       name: 'SelectButton',
+      title: '选择按钮',
       directory: 'select-button',
       cmp: SelectButtonDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/select-button/README.md'),
@@ -189,6 +206,7 @@ export class DemoConfigService {
     },
     {
       name: 'Overlay',
+      title: '遮罩',
       directory: 'select-button',
       cmp: OverlayDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/overlay/README.md'),
@@ -197,6 +215,7 @@ export class DemoConfigService {
     },
     {
       name: 'Carousel',
+      title: '轮播',
       directory: 'carousel',
       cmp: CarouselDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/carousel/README.md'),
@@ -205,6 +224,7 @@ export class DemoConfigService {
     },
     {
       name: 'Switch',
+      title: '开关',
       directory: 'carousel',
       cmp: SwitchDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/switch/README.md'),
@@ -213,6 +233,7 @@ export class DemoConfigService {
     },
     {
       name: 'MenuBar',
+      title: '菜单',
       directory: 'menu-bar',
       cmp: MenuBarDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/menu-bar/README.md'),
@@ -221,6 +242,7 @@ export class DemoConfigService {
     },
     {
       name: 'AutoComplete',
+      title: '自动补全',
       directory: 'auto-complete',
       cmp: AutoCompleteDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/auto-complete/README.md'),
@@ -229,6 +251,7 @@ export class DemoConfigService {
     },
     {
       name: 'FlowStep',
+      title: '步骤条',
       directory: 'flow-step',
       cmp: FlowStepDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/flow-step/README.md'),
@@ -237,6 +260,7 @@ export class DemoConfigService {
     },
     {
       name: 'InfiniteScroll',
+      title: '滚动加载',
       directory: 'infinite-scroll',
       cmp: InfiniteScrollDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/infinite-scroll/README.md'),
@@ -245,6 +269,7 @@ export class DemoConfigService {
     },
     {
       name: 'DataTable',
+      title: '表格',
       directory: 'data-table',
       cmp: DataTableDemoComponent,
       readMe: '',
@@ -253,6 +278,7 @@ export class DemoConfigService {
     },
     {
       name: 'Draggable',
+      title: '拖拽',
       directory: 'draggable',
       cmp: DraggableDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/draggable/README.md'),
@@ -261,6 +287,7 @@ export class DemoConfigService {
     },
     {
       name: 'FileUpload',
+      title: '文件上传',
       directory: 'file-upload',
       cmp: FileUploadDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/file-upload/README.md'),
@@ -269,6 +296,7 @@ export class DemoConfigService {
     },
     {
       name: 'TimePicker',
+      title: '时间选择',
       directory: 'time-picker',
       cmp: TimePickerDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/time-picker/README.md'),
@@ -278,6 +306,7 @@ export class DemoConfigService {
 
     {
       name: 'RadioGroup',
+      title: '单选组',
       directory: 'radio-group',
       cmp: RadioGroupDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/radio-group/README.md'),
@@ -286,6 +315,7 @@ export class DemoConfigService {
     },
     {
       name: 'CheckboxGroup',
+      title: '多选组',
       directory: 'checkbox-group',
       cmp: CheckboxGroupDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/checkbox-group/README.md'),
@@ -294,6 +324,7 @@ export class DemoConfigService {
     },
     {
       name: 'Validators',
+      title: '校验器',
       directory: 'validators',
       cmp: ValidatorsDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/validators/README.md'),
@@ -302,6 +333,7 @@ export class DemoConfigService {
     },
     {
       name: 'Notify',
+      title: '通知',
       directory: 'notify',
       cmp: NotifyDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/notify/README.md'),
@@ -310,6 +342,7 @@ export class DemoConfigService {
     },
     {
       name: 'TreeView',
+      title: '树状列表',
       directory: 'tree-view',
       cmp: TreeViewDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/tree-view/README.md'),
@@ -319,6 +352,7 @@ export class DemoConfigService {
     },
     {
       name: 'Ellipsis',
+      title: '文字裁剪',
       directory: 'ellipsis',
       cmp: EllipsisDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/ellipsis/README.md'),
@@ -327,6 +361,7 @@ export class DemoConfigService {
     },
     {
       name: 'Tags',
+      title: '标签',
       directory: 'tags',
       cmp: TagsDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/tags/README.md'),
@@ -335,6 +370,7 @@ export class DemoConfigService {
     },
     {
       name: 'ImageUpload',
+      title: '图片上传',
       directory: 'image-upload',
       cmp: ImageUploadDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/image-upload/README.md'),
@@ -343,6 +379,7 @@ export class DemoConfigService {
     },
     {
       name: 'Select',
+      title: '下拉选择',
       directory: 'select',
       cmp: SelectDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/select/README.md'),
@@ -351,6 +388,7 @@ export class DemoConfigService {
     },
     {
       name: 'Slider',
+      title: '范围选择',
       directory: 'slider',
       cmp: SliderDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/slider/README.md'),
@@ -359,6 +397,7 @@ export class DemoConfigService {
     },
     {
       name: 'Button',
+      title: '按钮',
       directory: 'button',
       cmp: ButtonDemoComponent,
       readMe: '',
@@ -367,6 +406,7 @@ export class DemoConfigService {
     },
     {
       name: 'Input',
+      title: '输入框',
       directory: 'input',
       cmp: InputDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/input/README.md'),

@@ -6,13 +6,14 @@
           <div>
             <accordion-group>
               <accordion-heading>
-                <strong>core</strong>
+                <strong>组件</strong>
+                <span class="title-en">Web Component</span>
               </accordion-heading>
               <ul class="list-group">
                 <li *ngFor="let cmp of coreComponents">
                   <a [routerLink]="['/component',cmp.name]" routerLinkActive="active" class="list-group-item">
-                    <span>{{cmp.name}}</span>
-                    <i></i>
+                    <span>{{cmp.title}}</span>
+                    <span class="title-en">{{cmp.name}}</span>
                   </a>
                 </li>
               </ul>
