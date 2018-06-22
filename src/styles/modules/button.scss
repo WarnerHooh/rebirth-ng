@@ -1,0 +1,36 @@
+@import "../variables";
+
+.btn, .btn:focus, .btn:active, .btn:active:focus {
+  outline: 0;
+}
+
+.btn {
+  border-radius: 2px;
+
+  i.fa + span {
+    margin-left: 8px;
+  }
+
+  &.btn-circle {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  & + .btn {
+    margin-left: 10px;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    background-color: lighten($ds-color-primary, 10%);
+    border-color: lighten($ds-color-primary, 12%);
+  }
+
+  &:active {
+    background-color: darken($ds-color-primary, 10%);
+    border-color: darken($ds-color-primary, 12%);
+  }
+}
