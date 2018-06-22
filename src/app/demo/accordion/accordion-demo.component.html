@@ -1,43 +1,47 @@
 <div class="accordion-demo">
 
-  <h2>Static text</h2>
+  <h2>Toggled Accordion</h2>
   <section class="md-content">
-    <p>应用场景说明</p>
+    <p>应用场景说明：展开/收起</p>
     <div class="button-panel">
       <button class="btn btn-primary" (click)="accordion.toggleById('1')">Toggle panel 1</button>
     </div>
-    <hr>
-    <re-accordion type="info" #accordion="accordion">
+    <br />
+
+    <re-accordion type="default" #accordion="accordion">
       <re-accordion-item id="1">
         <re-accordion-header>
-          Panel info header!
+          Panel header 1!
         </re-accordion-header>
         <re-accordion-body>
-          Panel info content.
+          Panel content 1.
         </re-accordion-body>
       </re-accordion-item>
+
       <re-accordion-item id="2">
         <re-accordion-header>
-          Panel success header!
+          Panel header 2!
         </re-accordion-header>
         <re-accordion-body>
-          Panel success content.
+          Panel content 2.
         </re-accordion-body>
       </re-accordion-item>
+
       <re-accordion-item id="3">
         <re-accordion-header>
-          Panel warning header.
+          Panel header 3!
         </re-accordion-header>
         <re-accordion-body>
-          Panel warning content.
+          Panel content 3.
         </re-accordion-body>
       </re-accordion-item>
     </re-accordion>
   </section>
 
+  <h2>Different type</h2>
   <section>
-    <h4>Different type in each panel</h4>
-    <re-accordion>
+    <p>应用场景说明：不同类型accordion</p>
+    <re-accordion [keepOneItem]="false">
       <re-accordion-item type="primary">
         <re-accordion-header>
           Panel primary header!
@@ -46,6 +50,7 @@
           Panel primary content.
         </re-accordion-body>
       </re-accordion-item>
+
       <re-accordion-item type="info">
         <re-accordion-header>
           Panel info header!
@@ -54,6 +59,7 @@
           Panel info content.
         </re-accordion-body>
       </re-accordion-item>
+
       <re-accordion-item type="success">
         <re-accordion-header>
           Panel success header!
@@ -62,6 +68,7 @@
           Panel success content.
         </re-accordion-body>
       </re-accordion-item>
+
       <re-accordion-item type="danger">
         <re-accordion-header>
           Panel warning header.
@@ -73,11 +80,12 @@
     </re-accordion>
   </section>
 
+  <h2>Append/Remove dynamically</h2>
   <section>
-    <h4> *ngFor items</h4>
+    <p>应用场景说明：动态增加/删除accordion item</p>
     <div class="button-panel">
-      <button class="btn btn-primary" (click)="appendItems()">Append more items</button>
-      <button class="btn btn-warning" (click)="removeLastItem()">Remove last
+      <button class="btn btn-primary" (click)="appendItems()">Append one item</button>
+      <button class="btn btn-primary" (click)="removeLastItem()">Remove last item
         {{items.length}}
       </button>
     </div>
@@ -86,8 +94,8 @@
       <ng-container *ngFor="let item of items">
         <re-accordion-item id="{{item.id}}" #panel="panel">
           <re-accordion-header>
-            <i class="glyphicon"
-               [ngClass]="{'glyphicon-chevron-up': panel.isCollapsed,'glyphicon-chevron-down': !panel.isCollapsed}"></i>
+            <i class="fa"
+               [ngClass]="{'fa-chevron-up': panel.isCollapsed,'fa-chevron-down': !panel.isCollapsed}"></i>
             &nbsp;{{item.title}}
           </re-accordion-header>
           <re-accordion-body>
