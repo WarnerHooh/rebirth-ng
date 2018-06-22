@@ -1,16 +1,27 @@
 // self scss variables or override 3rd variables;
 
-$icon-font-path: "../assets/fonts/";
+//$icon-font-path: "../assets/fonts/";
 
 $ds-color-primary: #0074e4;
+$ds-color-background: #f3f7fc;
+
 $ds-color-text: #333333;
 $ds-color-text-light: #666666;
 $ds-color-white: #ffffff;
 $ds-color-black: #000000;
 $ds-color-gray: #999999;
 $ds-color-gray-light: #e5e5e5;
+
 $ds-color-green-light: #f3f7fc;
 $ds-color-blue-medium: #91ceff;
 $ds-color-blue-light: #e1eeff;
 
+$ds-color-danger: #f5222d;
+
+// bootstrap
+$brand-primary: $ds-color-primary;
+$brand-danger: $ds-color-danger;
+$body-bg: $ds-color-background;
+
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+

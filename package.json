@@ -104,7 +104,9 @@
   },
   "dependencies": {
     "date-fns": "^1.27.2",
+    "font-awesome": "^4.7.0",
     "ngx-accordion": "0.0.17",
+    "normalize.css": "^8.0.0",
     "rebirth-ng": "^6.0.3"
   },
   "description": "> Angular UI plugin with bootstrap;",
