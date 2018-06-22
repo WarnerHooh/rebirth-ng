@@ -5,7 +5,7 @@
 
 ## Primary Color
 
-<div class="color-container">
+<div class="color-guide">
   <div class="section">
     <div class="block" style="background-color: #0074E4;"></div>
     <p>PrimaryBlue</p>
@@ -24,7 +24,7 @@
 
 ## Backgrounds & Border Color
 
-<div class="color-container">
+<div class="color-guide">
   <div class="section">
     <div class="block" style="background-color: #F3F7FC;"></div>
     <p>BgColor</p>
@@ -71,7 +71,7 @@
 
 ## Text Color
 
-<div class="color-container">
+<div class="color-guide">
   <div class="section">
     <div class="block text" style="color: #333333;">normal-text</div>
     <p>NormalText</p>
@@ -124,7 +124,7 @@
 
 ## Technical Debt Rating Color
 
-<div class="color-container">
+<div class="color-guide">
   <div class="section">
     <div class="block" style="background-color: #52C41A;"></div>
     <p>RatingA</p>
@@ -165,7 +165,7 @@
 
 ## Icon Color
 
-<div class="color-container">
+<div class="color-guide">
   <div class="section">
     <div class="block icon" style="background-color: #0074E4;"></div>
     <p>IconActiveColor</p>

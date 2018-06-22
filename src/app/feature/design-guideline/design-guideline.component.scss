@@ -2,29 +2,6 @@
 
 ::ng-deep {
   .md-content {
-    h1, h2, h3, h4, h5, h6 {
-      color: $ds-color-primary;
-    }
-
-    h1 {
-      font-size: 32px;
-    }
-
-    h2 {
-      font-size: 24px;
-
-      &:before {
-        content: '# ';
-        color: $ds-color-blue-medium;
-      }
-    }
-
-    p {
-      color: $ds-color-text;
-      font-size: 16px;
-      line-height: 26px;
-    }
-
     ul li {
       color: $ds-color-text-light;
       font-size: 14px;
@@ -53,7 +30,7 @@
     }
   }
 
-  .color-container {
+  .color-guide {
     display: flex;
     flex-wrap: wrap;
     margin-left: 24px;
