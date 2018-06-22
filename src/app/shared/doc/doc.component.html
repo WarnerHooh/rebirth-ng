@@ -1,7 +1,10 @@
 <section id="{{component.name}}" class="md-content">
-  <h1>{{component.name}}</h1>
+  <h1>{{component.title}} {{component.name}}</h1>
+  <hr/>
+
   <re-doc-content [component]="component.cmp"></re-doc-content>
   <hr/>
+
   <section>
     <re-tabs class="code-tabs">
       <re-tab id="html" title="HTML">
