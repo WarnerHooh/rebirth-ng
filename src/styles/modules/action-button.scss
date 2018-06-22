@@ -1,0 +1,23 @@
+@import "../variables";
+
+re-action-button {
+  & + re-action-button {
+    margin-left: 10px;
+  }
+
+  .btn-group {
+    border-radius: 2px;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    background-color: lighten($ds-color-primary, 10%);
+    border-color: lighten($ds-color-primary, 12%);
+  }
+
+  &:active {
+    background-color: darken($ds-color-primary, 10%);
+    border-color: darken($ds-color-primary, 12%);
+  }
+}
