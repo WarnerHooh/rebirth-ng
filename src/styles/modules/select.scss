@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+re-select > .select-container.dropdown {
+  border-bottom: none;
+
+  .input-group.select-panel {
+    input.select-control {
+      border: 1px solid $input-border;
+      border-right: 0;
+    }
+  }
+
+  .input-group-addon {
+    border: 1px solid $input-border;
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
+}

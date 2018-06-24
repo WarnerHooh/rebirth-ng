@@ -1,25 +1,27 @@
 <div class="select-demo">
 
+  <h2>Primary:</h2>
   <section>
-    <h4>Demo:</h4>
+    <p>使用场景：</p>
     <re-select [options]="options" [(ngModel)]="selectValue" placeholder="Please select value"></re-select>
     <br>
     <pre>{{selectValue | json}}</pre>
   </section>
 
+  <h2>Advanced:</h2>
   <section>
-    <h4>Select Object Demo:</h4>
+    <p>使用场景：对象类型选择</p>
     <re-select [options]="objOptions" [(ngModel)]="selectObjValue" placeholder="Please select value"></re-select>
     <br>
     <pre>{{selectObjValue | json}}</pre>
   </section>
 
+  <h2>Select group:</h2>
   <section>
-    <h4>Group select:</h4>
+    <p>使用场景：分组选择</p>
     <re-select [groupOptions]="groupOptions" [(ngModel)]="selectGroupValue"
                placeholder="Please select value"></re-select>
     <br>
-    <pre>{{selectGroupValue | json}}</pre>
+    <pre *ngIf="selectGroupValue">{{selectGroupValue | json}}</pre>
   </section>
-
 </div>
