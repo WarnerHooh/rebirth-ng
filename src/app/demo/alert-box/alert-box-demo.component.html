@@ -1,46 +1,40 @@
 <div class="alert-box-demo">
 
+  <h2>Different type</h2>
   <section>
-    <h4>Info:</h4>
+    <p>Info alert:</p>
     <re-alert-box>
       <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super
       important.
     </re-alert-box>
-  </section>
 
-  <section>
-    <h4>Success:</h4>
+    <p>Success alert:</p>
     <re-alert-box type="success">
       <strong>Well done!</strong> You successfully read this important alert message.
     </re-alert-box>
-  </section>
 
-  <section>
-    <h4>Warning:</h4>
+    <p>Warning alert:</p>
     <re-alert-box type="warning">
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </re-alert-box>
-  </section>
 
-  <section>
-    <h4>Danger:</h4>
+    <p>Danger alert</p>
     <re-alert-box type="danger">
-      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Oh snap!</strong> Change a
+      <span class="fa fa-exclamation-circle" aria-hidden="true"></span> <strong>Oh snap!</strong> Change a
       few things up and try submitting again.
     </re-alert-box>
   </section>
 
+  <h2>Closeable alert</h2>
   <section>
-    <h4>Auto disappear:</h4>
+    <p>Auto disappear:</p>
     <div class="checkbox">
       <label>
-        <input type="checkbox" [(ngModel)]="autoDisappear" (change)="autoDisappearChange()"/>Auto disappear after
-        2s?
+        <input type="checkbox" [(ngModel)]="autoDisappear" (change)="autoDisappearChange()"/>Auto disappear after 2s.
       </label>
     </div>
 
     <re-alert-box type="danger" [closable]="true" (close)="close()" *ngIf="!closed">
-
       <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </re-alert-box>
   </section>
