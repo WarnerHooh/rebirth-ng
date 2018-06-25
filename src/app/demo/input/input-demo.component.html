@@ -1,9 +1,9 @@
 <div class="input-demo">
 
-  <h2>Primary:</h2>
+  <h2>Basic:</h2>
   <section>
     <p>使用场景:</p>
-    <input type="text" placeholder="input placeholder" class="form-control" />
+    <input type="text" placeholder="input placeholder" class="form-control"/>
   </section>
 
   <h2>With icons:</h2>
@@ -44,6 +44,64 @@
     <div class="input-group input-group-sm">
       <span class="input-group-addon">@</span>
       <input class="form-control" placeholder="Username">
+    </div>
+  </section>
+
+  <h2>多字段搜索</h2>
+  <section>
+    <p>交互细节：点击搜索按钮执行搜索条件</p>
+    <form class="form-horizontal clearfix">
+      <div>
+        <label class="pull-left control-label">流水线</label>
+        <div class="col-md-3">
+          <input type="text" class="form-control" placeholder="请输入流水线编号" />
+        </div>
+        <button class="btn btn-primary">
+          <i class="fa fa-search"></i>
+          <span>搜索</span>
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <h2>单字段搜索</h2>
+  <section>
+    <p>交互细节：点击搜索按钮执行搜索，交互UI样式同多字段搜索一致。</p>
+    <form class="form-horizontal clearfix">
+      <label class="pull-left control-label">分层流水线</label>
+      <div class="col-md-3">
+        <div class="input-group">
+          <input class="form-control" placeholder="请输入流水线编号" />
+          <div class="input-group-btn">
+            <button class="btn btn-primary">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <h2>单字段实时搜索</h2>
+  <section>
+    <p>交互细节 ：实时搜索符合条件的内容。</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="input-group">
+          <input class="form-control" placeholder="请输入流水线编号">
+          <span class="input-group-addon">
+            <i class="fa fa-search"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="input-group">
+          <input class="form-control" placeholder="请输入发布单元名称">
+          <span class="input-group-addon">
+            <i class="fa fa-search"></i>
+          </span>
+        </div>
+      </div>
     </div>
   </section>
 
