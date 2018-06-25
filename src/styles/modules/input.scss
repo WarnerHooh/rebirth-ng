@@ -1,5 +1,38 @@
 @import "../../styles/variables";
 
+.form-control {
+  line-height: 1.58;
+}
+
 .input-group-addon {
   background-color: $ds-color-white;
+}
+
+div[class^="input-group"].organic {
+  display: block;
+  position: relative;
+
+  .input-group-addon, .form-control {
+    display: block;
+    float: none;
+  }
+
+  .form-control {
+    border-radius: 2px;
+    padding-right: $padding-base-horizontal * 4;
+  }
+
+  .input-group-addon {
+    position: absolute;
+    top: 50%;
+    right: $padding-base-horizontal * 2 + 2;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+  }
+}
+
+textarea {
+  min-height: 104px;
 }

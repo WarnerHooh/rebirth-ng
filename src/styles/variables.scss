@@ -23,7 +23,18 @@ $ds-color-danger: #f5222d;
 // bootstrap
 $brand-primary: $ds-color-primary;
 $brand-danger: $ds-color-danger;
+$state-danger-text: $ds-color-danger;
 $body-bg: $ds-color-background;
+
+$padding-base-vertical: 7px;
+$padding-base-horizontal: 7px;
+$padding-large-vertical: 10px;
+$padding-large-horizontal: 10px;
+$padding-small-vertical: 5px;
+$padding-small-horizontal: 5px;
+$padding-xs-vertical: 2px;
+$padding-xs-horizontal: 2px;
+$border-radius-base: 2px;
 
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 

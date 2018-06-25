@@ -1,9 +1,41 @@
 <div class="input-demo">
 
-  <h2>Basic:</h2>
+  <h2>单行文本框</h2>
   <section>
-    <p>使用场景:</p>
-    <input type="text" placeholder="input placeholder" class="form-control"/>
+    <p>交互细节：文本框通用状态及长度范式如下，短文本框（约占可用区域的1/5），中文本框（约占可用区域的1/3），长文本框（约占可用区域的1/2）。</p>
+    <div class="row form-group">
+      <div class="col-md-4">
+        <input type="text" placeholder="Normal" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="row form-group">
+      <div class="col-md-4 has-error">
+        <input type="text" placeholder="Error" class="form-control"/>
+        <p class="help-block">这里显示错误信息提示</p>
+      </div>
+
+      <div class="col-md-4 has-success">
+        <div class="input-group organic">
+          <input type="text" placeholder="Success" class="form-control"/>
+          <span class="input-group-addon">
+            <i class="fa fa-check"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2>多行文本框</h2>
+  <section>
+    <p>交互细节：文本框通用状态及长度范式如下，短文本框（约占可用区域的1/5），中文本框（约占可用区域的1/3），长文本框（约占可用区域的1/2）。</p>
+    <div class="row form-group">
+      <div class="col-md-6">
+        <textarea class="form-control">该配置模板实现基于 Java8 + Maven 构建环境的通用 Dev 流水线，使用该模板请确保在您的项目BulidScript 目录中包含以下文件:
+- 发布制品库相关： assembly.xml, pom.xml
+- 化部署相关：manifest.yml, ucd-project.properties</textarea>
+      </div>
+    </div>
   </section>
 
   <h2>With icons:</h2>
@@ -87,7 +119,7 @@
     <p>交互细节 ：实时搜索符合条件的内容。</p>
     <div class="row">
       <div class="col-md-3">
-        <div class="input-group">
+        <div class="input-group organic">
           <input class="form-control" placeholder="请输入流水线编号">
           <span class="input-group-addon">
             <i class="fa fa-search"></i>
@@ -95,7 +127,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="input-group">
+        <div class="input-group organic">
           <input class="form-control" placeholder="请输入发布单元名称">
           <span class="input-group-addon">
             <i class="fa fa-search"></i>
