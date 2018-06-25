@@ -49,14 +49,27 @@
   }
 }
 
-.btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:focus, .btn-default.disabled:hover, .btn-default[disabled]:hover {
+.btn-default-reset {
   background-color: $ds-color-white;
   border-color: $ds-color-primary;
 }
 
 .btn-default {
+  @extend .btn-default-reset;
+  &:hover, &:focus, &:active, &:active:focus, &.disabled:hover, &[disabled]:hover {
+    @extend .btn-default-reset;
+  }
+}
+
+.btn-default {
+  line-height: 1.6;
   border: 1px solid $ds-color-primary;
   color: $ds-color-primary;
+
+  &.btn-active, &.btn-active:hover {
+    border-color: $ds-color-text;
+    color: $ds-color-text;
+  }
 
   &:hover {
     border-color: $ds-color-primary-hover;
@@ -68,7 +81,6 @@
     color: $ds-color-primary-active;
   }
 }
-
 
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   opacity: 0.2;
