@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 ::ng-deep {
-  .md-content {
+  .md-content:not([id]) {
     ul li {
       color: $ds-color-text-light;
       font-size: 14px;
