@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.input-group input + re-auto-complete-popup {
+  width: 100%;
+}
+
+// $grid-gutter-width
+input + re-auto-complete-popup {
+  width: calc(100% - 30px);
+}

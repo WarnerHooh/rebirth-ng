@@ -16,7 +16,7 @@ export class AutoCompleteDemoComponent {
   selectItem3: string;
   selectItem4: any;
   selectItem5: string;
-  mutipleItems: string[] = ['C#', 'C', 'C++', 'CPython', 'Java'];
+  multipleItems: string[] = ['C#', 'C', 'C++', 'CPython', 'Java'];
   isDisabled = false;
   icons = ['glyphicon-asterisk', 'glyphicon glyphicon-plus', 'glyphicon glyphicon-euro', 'glyphicon glyphicon-eu'];
   languages = ['C#', 'C', 'C++', 'CPython', 'Java', 'JavaScript', 'Go', 'Python', 'Ruby', 'F#', 'TypeScript', 'SQL',

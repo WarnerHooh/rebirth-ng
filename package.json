@@ -8,7 +8,7 @@
     "ng": "ng",
     "i18n:extract": "ng-xi18n",
     "start": "npm-run-all --parallel client:run server:run",
-    "client:run": "ng serve -o",
+    "client:run": "ng serve -o --host 0.0.0.0",
     "server:run": "nodemon  ./build/mock.server.js",
     "build": "ng build",
     "test": "npm run lint &&  npm run npm:publish && rm -rf ./lib",
