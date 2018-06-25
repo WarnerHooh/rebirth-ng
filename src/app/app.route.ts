@@ -8,5 +8,7 @@ export const ROUTER_CONFIG: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/gettingStarted' },
   { path: 'gettingStarted', component: GettingStartedComponent, data: { reusable: true } },
   { path: 'design-guideline/:name', component: DesignGuidelineComponent},
+  { path: 'design-guideline', redirectTo: 'design-guideline/principle'},
   { path: 'component/:name', component: ComponentsComponent, data: { reusable: true } },
+  { path: 'component', redirectTo: 'component/Accordion'},
 ];
