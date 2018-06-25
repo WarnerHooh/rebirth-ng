@@ -5,7 +5,10 @@
 }
 
 .btn {
+  border: none;
   border-radius: 2px;
+  min-width: 104px;
+  line-height: 1.75;
 
   i.fa + span {
     margin-left: 8px;
@@ -16,6 +19,19 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    min-width: auto;
+  }
+
+  &.btn-xs {
+    min-width: auto;
+  }
+
+  &.btn-sm {
+    min-width: 60px;
+  }
+
+  &.btn-lg {
+    min-width: 160px;
   }
 
   & + .btn {
@@ -25,12 +41,35 @@
 
 .btn-primary {
   &:hover {
-    background-color: lighten($ds-color-primary, 10%);
-    border-color: lighten($ds-color-primary, 12%);
+    background-color: $ds-color-primary-hover;
   }
 
-  &:active {
-    background-color: darken($ds-color-primary, 10%);
-    border-color: darken($ds-color-primary, 12%);
+  &:focus, &:active, &:active:focus {
+    background-color: $ds-color-primary-active;
   }
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:focus, .btn-default.disabled:hover, .btn-default[disabled]:hover {
+  background-color: $ds-color-white;
+  border-color: $ds-color-primary;
+}
+
+.btn-default {
+  border: 1px solid $ds-color-primary;
+  color: $ds-color-primary;
+
+  &:hover {
+    border-color: $ds-color-primary-hover;
+    color: $ds-color-primary-hover;
+  }
+
+  &:focus, &:active, &:active:focus {
+    border-color: $ds-color-primary-active;
+    color: $ds-color-primary-active;
+  }
+}
+
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  opacity: 0.2;
 }
