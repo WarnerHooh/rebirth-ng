@@ -1,5 +1,17 @@
 <div class="select-demo">
 
+  <h2>特殊下拉菜单</h2>
+  <section>
+    <p>场景定义：主要应用于表格的下拉菜单显示。例如：流水线 Monitor 下拉菜单。</p>
+    <div class="clearfix row">
+      <div class="col-md-2">
+        <re-select class="select-primary" [options]="options" iconDown="glyphicon glyphicon-triangle-bottom"
+                   placeholder="Monitor">
+        </re-select>
+      </div>
+    </div>
+  </section>
+
   <h2>表单下拉菜单</h2>
   <section>
     <p>场景定义：主要应用于表单类的下拉菜单样式。</p>
@@ -27,16 +39,11 @@
     </form>
   </section>
 
-  <h2>Advanced:</h2>
-  <section>
-    <p>使用场景：对象类型选择</p>
-  </section>
-
   <h2>Select group:</h2>
   <section>
     <p>使用场景：分组选择</p>
-    <re-select [groupOptions]="groupOptions" [(ngModel)]="selectGroupValue"
-               placeholder="Please select value"></re-select>
+    <re-select [groupOptions]="groupOptions" iconDown="glyphicon glyphicon-triangle-bottom"
+               [(ngModel)]="selectGroupValue" placeholder="Please select value"></re-select>
     <br>
     <pre *ngIf="selectGroupValue">{{selectGroupValue | json}}</pre>
   </section>

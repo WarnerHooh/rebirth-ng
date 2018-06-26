@@ -20,4 +20,13 @@ re-select > .select-container.dropdown {
       border-left: 0;
     }
   }
+
+}
+
+re-select.select-primary > .select-container.dropdown .input-group.select-panel input.select-control {
+  border-color: $ds-color-primary;
+
+  &::placeholder {
+    color: $ds-color-primary;
+  }
 }
