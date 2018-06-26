@@ -1,23 +1,22 @@
 @import "../variables";
 
 re-action-button {
-  & + re-action-button {
-    margin-left: 10px;
+  .btn {
+    min-width: auto;
+  }
+
+  .open > .btn-default.dropdown-toggle, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus {
+    border-color: $ds-color-primary-active;
+    color: $ds-color-primary-active;
+    background-color: $ds-color-white;
   }
 
   .btn-group {
     border-radius: 2px;
   }
-}
 
-.btn-primary {
-  &:hover {
-    background-color: lighten($ds-color-primary, 10%);
-    border-color: lighten($ds-color-primary, 12%);
+  & + re-action-button {
+    margin-left: 10px;
   }
 
-  &:active {
-    background-color: darken($ds-color-primary, 10%);
-    border-color: darken($ds-color-primary, 12%);
-  }
 }

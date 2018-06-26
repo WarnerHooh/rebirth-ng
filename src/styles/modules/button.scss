@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../common";
 
 .btn, .btn:focus, .btn:active, .btn:active:focus {
   outline: 0;
@@ -54,6 +54,14 @@
     border-color: $ds-color-primary-active;
     background-color: $ds-color-primary-active;
   }
+}
+
+.btn-danger {
+  @include button-variant($ds-color-white, $ds-color-danger, $ds-color-danger);
+}
+
+.btn-warning {
+  @include button-variant($ds-color-white, $ds-color-warning, $ds-color-warning);
 }
 
 .btn-default-reset {
