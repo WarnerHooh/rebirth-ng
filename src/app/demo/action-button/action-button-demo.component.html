@@ -1,8 +1,8 @@
 <div class="action-button-demo">
 
-  <h2>Different type</h2>
+  <h2>不同类型</h2>
   <section>
-    <p>使用场景说明: 不同类型</p>
+    <p>场景定义: 不同类型的按钮组合</p>
     <re-action-button [buttonText]="'Dropdown action'" [actions]="actions" icon="fa fa-tasks"
                       [type]="'primary'"
                       (actionClick)="onActionClick($event)"></re-action-button>
@@ -17,9 +17,9 @@
                       (actionClick)="onActionClick($event)"></re-action-button>
   </section>
 
-  <h2>Different type</h2>
+  <h2>状态管理</h2>
   <section>
-    <p>使用场景说明: disable切换</p>
+    <p>场景定义: disable切换</p>
     <div>
       <button class="btn btn-primary" (click)="disabledActionOpen = !disabledActionOpen;">Toggle disabled</button>
     </div>
@@ -28,17 +28,19 @@
                       [disabled]="disabledActionOpen" (actionClick)="onActionClick($event)"></re-action-button>
   </section>
 
-  <h2>Customise action button</h2>
+  <h2>自定义</h2>
   <section>
-    <p>使用场景说明: 自定义动作按钮</p>
+    <p>场景定义：轻量级，可用于表格扩展功能收纳，节省空间。</p>
     <ng-template #buttonTemplate let-action>
-      <button class="btn btn-default" (click)="action.toggle($event)">
-        <i class="fa fa-filter"></i>
-        <span>自定义按钮</span>
-      </button>
+      <div class="action-btn-plain" [ngClass]="{'open': action.isOpen}" (click)="action.toggle($event)">
+        <a>
+          <span>更多</span>
+          <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+      </div>
     </ng-template>
 
-    <re-action-button [buttonText]="'Default Action'" type="default" [actions]="actions"
+    <re-action-button [buttonText]="'Default Action'" type="default" [actions]="actions2"
                       (actionClick)="onActionClick($event)" [buttonTemplate]="buttonTemplate"></re-action-button>
   </section>
 

@@ -31,6 +31,17 @@ export class ActionButtonDemoComponent {
       icon: 'glyphicon glyphicon-remove'
     }];
 
+  actions2: ActionItem[] = [
+    {
+      id: 1,
+      text: '编辑',
+      icon: 'glyphicon glyphicon-edit'
+    }, {
+      id: 2,
+      text: '删除',
+      icon: 'glyphicon glyphicon-trash'
+    }];
+
   onActionClick(item: ActionItem) {
     console.log(`Action item ${item.id} clicked`, item);
   }

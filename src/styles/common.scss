@@ -10,3 +10,15 @@
 *:-khtml-drag {
   background-color: rgba(238, 238, 238, 0.5);
 }
+
+a {
+  cursor: pointer;
+
+  &:hover {
+    color: $ds-color-primary-hover;
+  }
+
+  &:active, &:focus {
+    color: $ds-color-primary-active;
+  }
+}

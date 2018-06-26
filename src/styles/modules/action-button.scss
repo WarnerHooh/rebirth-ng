@@ -18,5 +18,20 @@ re-action-button {
   & + re-action-button {
     margin-left: 10px;
   }
+}
 
+.action-btn-plain {
+  cursor: pointer;
+
+  i {
+    margin-left: 6px;
+    transition: all 0.2s;
+    vertical-align: text-top;
+  }
+
+  &.open {
+    i {
+      transform: rotate(180deg);
+    }
+  }
 }
