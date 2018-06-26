@@ -1,73 +1,65 @@
 <div class="tooltip-demo">
+  <h2>显示完整信息</h2>
   <section>
-    <h4>Hover tooltip:</h4>
-    <div class="button-panel">
-      <button class="btn btn-primary" reTooltip="I am a rebirth tooltip!" placement="left">Tooltip on left</button>
-      <button class="btn btn-success" reTooltip="I am a rebirth tooltip!">Tooltip on top</button>
-      <button class="btn btn-warning" reTooltip="I am a rebirth tooltip!" placement="bottom">Tooltip on bottom</button>
-      <button class="btn btn-danger" reTooltip="I am a rebirth tooltip!" placement="right">Tooltip on right</button>
+    <p>场景定义：文字因超长被截断，鼠标hover显示文字完整信息。tooltip padding=8px，max-width<1/3 screen-width。</p>
+    <a href="#" reTooltip="LU18_MobileBank_FrontEnd_1230890-90SunCode_UATLU18_MobileBank0000Ajojdpenjioegmoaption"
+       placement="bottom">
+      LU18_MobileBank_FrontEnd...
+    </a>
+  </section>
+
+  <h2>显示完整信息</h2>
+  <section>
+    <p>场景定义：表格字段解释，信息冗长，或者其他通过鼠标点击 icon 显示隐藏类的信息。</p>
+    <div class="text-center col-md-3">
+      <a>
+        <i class="glyphicon glyphicon-info-sign"
+           reTooltip="Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers"></i>
+      </a>
     </div>
   </section>
 
+  <h2>大小和方向</h2>
   <section>
-    <h4>Click tooltip:</h4>
-    <div class="button-panel">
-      <button class="btn btn-primary" [trigger]="'click'" reTooltip="I am a rebirth tooltip!" placement="left">Tooltip
-        on left
-      </button>
-      <button class="btn btn-success" [trigger]="'click'" reTooltip="I am a rebirth tooltip!">Tooltip on top</button>
-      <button class="btn btn-warning" [trigger]="'click'" reTooltip="I am a rebirth tooltip!" placement="bottom">Tooltip
-        on bottom
-      </button>
-      <button class="btn btn-danger" [trigger]="'click'" reTooltip="I am a rebirth tooltip!" placement="right">Tooltip
-        on right
-      </button>
+    <p>场景定义：表格字段解释，信息冗长，或者其他通过鼠标点击 icon 显示隐藏类的信息。</p>
+    <a reTooltip="😊 Short" placement="left">
+      Tooltip at left
+    </a>,
+    <a
+      reTooltip="🚀 Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers">Tooltip
+      at top</a>,
+    <a reTooltip="I am a rebirth tooltip!" placement="bottom">
+      Tooltip at bottom
+    </a>,
+    <a reTooltip="I am a rebirth tooltip!" placement="right">
+      Tooltip at right
+    </a>
+  </section>
+
+  <h2>其他</h2>
+  <section>
+    <p>场景定义：自定义展开/收起</p>
+    <div>
+      <a #tooltip="tooltip" [trigger]="'manual'"
+         [reTooltip]="'I am a rebirth tooltip!'">
+        Tooltip manually...
+      </a>
+      <input type="checkbox" id="tooltipSwitch" [(ngModel)]="tooltipSwitch" (change)="toggleToolTip()"
+             name="tooltipSwitch"/>
+      <label for="tooltipSwitch">&nbsp;显示Tooltip</label>
+    </div>
+    <br/>
+
+    <p>场景定义：自定义tooltip内容，如超链接。支持点击展开</p>
+    <div>
+      <a [reTooltip]="tipContent" [context]="'Design system'" [trigger]="'click'">Rich tooltip</a>
     </div>
   </section>
 
-  <section>
-    <h4>Append to body tooltip:</h4>
-    <div class="button-panel">
-      <button class="btn btn-danger" [appendBody]="true" [trigger]="'click'" reTooltip="I am a rebirth tooltip!"
-              placement="right">Tooltip
-        on right
-      </button>
+  <ng-template #tipContent let-context>
+    <div>
+      Checkout <a target="_blank" href="#">{{context}}</a> for more details!
     </div>
-  </section>
-
-  <section>
-    <h4>Manual tooltip:</h4>
-    <div class="button-panel">
-      <button class="btn btn-primary" #tooltip="tooltip" [trigger]="'manual'"
-              [reTooltip]="'I am a rebirth tooltip! <a href='+github+'>' + github +'</a>.'">
-        Tooltip on top
-      </button>
-      <button class="btn btn-success" (click)="tooltip.show()">Show tooltip</button>
-      <button class="btn btn-warning" (click)="tooltip.hide()">Hide tooltip</button>
-    </div>
-  </section>
-
-  <section>
-    <h4>Customise tooltip:</h4>
-    <div class="button-panel">
-      <button class="btn btn-primary" [reTooltip]="tipContent" [context]="'button1'">
-        Tooltip on top
-      </button>
-
-      <button class="btn btn-success" [reTooltip]="tipContent" [context]="'button2'">
-        Tooltip on top
-      </button>
-
-      <ng-template #tipContent let-context>
-        <h4>Setting</h4>
-        <div>
-          <p><strong>name</strong>: {{setting.name}}</p>
-          <p><strong>trigger</strong>: {{setting.trigger}}</p>
-          <p><strong>placement</strong>: {{setting.placement}}</p>
-          <p><strong>target</strong>: {{context}}</p>
-        </div>
-      </ng-template>
-    </div>
-  </section>
+  </ng-template>
 
 </div>
