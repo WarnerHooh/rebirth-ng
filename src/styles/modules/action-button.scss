@@ -35,3 +35,8 @@ re-action-button {
     }
   }
 }
+
+.action-btn-plain + .dropdown-menu {
+  min-width: auto;
+  width: auto;
+}
