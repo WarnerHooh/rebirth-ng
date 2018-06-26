@@ -13,8 +13,9 @@
   .input-group-select {
     display: table-cell;
     width: 30%;
+    vertical-align: middle;
 
-    & > .select-container.dropdown .input-group-addon:last-child {
+    > .select-container.dropdown .input-group.select-panel input.select-control {
       border-right: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
@@ -22,28 +23,34 @@
   }
 }
 
-div[class^="input-group"].organic {
-  display: block;
-  position: relative;
-
-  .input-group-addon, .form-control {
+div[class^="input-group"] {
+  &.organic, &.select-panel {
     display: block;
-    float: none;
-  }
+    position: relative;
 
-  .form-control {
-    border-radius: 2px;
-    padding-right: $padding-base-horizontal * 4;
-  }
+    .input-group-addon, .form-control {
+      display: block;
+      float: none;
+    }
 
-  .input-group-addon {
-    position: absolute;
-    top: 50%;
-    right: $padding-base-horizontal * 2 + 2;
-    z-index: 10;
-    background: transparent;
-    border: none;
-    transform: translateY(-50%);
+    .form-control {
+      border-radius: 2px;
+      padding-right: $padding-base-horizontal * 4;
+    }
+
+    .input-group-addon {
+      position: absolute;
+      top: 50%;
+      right: $padding-base-horizontal * 2 + 2;
+      z-index: 10;
+      background: transparent;
+      border: none;
+      transform: translateY(-50%);
+
+      i {
+        width: 16px;
+      }
+    }
   }
 }
 

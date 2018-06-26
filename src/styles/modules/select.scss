@@ -6,12 +6,15 @@ re-select > .select-container.dropdown {
   .input-group.select-panel {
     input.select-control {
       border: 1px solid $input-border;
-      border-right: 0;
     }
   }
 
   .input-group-addon {
     border: 1px solid $input-border;
+
+    i {
+      color: $ds-color-primary;
+    }
 
     &:last-child {
       border-left: 0;

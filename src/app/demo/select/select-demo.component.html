@@ -1,19 +1,35 @@
 <div class="select-demo">
 
-  <h2>Primary:</h2>
+  <h2>表单下拉菜单</h2>
   <section>
-    <p>使用场景：</p>
-    <re-select [options]="options" [(ngModel)]="selectValue" placeholder="Please select value"></re-select>
-    <br>
-    <pre>{{selectValue | json}}</pre>
+    <p>场景定义：主要应用于表单类的下拉菜单样式。</p>
+    <form class="form-horizontal">
+      <div class="clearfix">
+        <label class="control-label pull-left">长文本框</label>
+        <div class="col-md-8">
+          <re-select [options]="options" iconDown="glyphicon glyphicon-triangle-bottom" [(ngModel)]="selectValue"
+                     name="name" placeholder="Please select value"></re-select>
+        </div>
+      </div>
+      <br/>
+      <pre>{{selectValue | json}}</pre>
+      <br/>
+
+      <div class="clearfix">
+        <label class="control-label pull-left">对象列表</label>
+        <div class="col-md-8">
+          <re-select [options]="objOptions" iconDown="glyphicon glyphicon-triangle-bottom" [(ngModel)]="selectObjValue"
+                     name="person" placeholder="Please select value"></re-select>
+        </div>
+      </div>
+      <br>
+      <pre>{{selectObjValue | json}}</pre>
+    </form>
   </section>
 
   <h2>Advanced:</h2>
   <section>
     <p>使用场景：对象类型选择</p>
-    <re-select [options]="objOptions" [(ngModel)]="selectObjValue" placeholder="Please select value"></re-select>
-    <br>
-    <pre>{{selectObjValue | json}}</pre>
   </section>
 
   <h2>Select group:</h2>
