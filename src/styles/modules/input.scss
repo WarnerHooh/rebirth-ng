@@ -1,11 +1,25 @@
 @import "../../styles/variables";
 
 .form-control {
-  line-height: 1.58;
+  line-height: 1.57;
+  height: 36px;
 }
 
 .input-group-addon {
   background-color: $ds-color-white;
+}
+
+.input-group {
+  .input-group-select {
+    display: table-cell;
+    width: 30%;
+
+    & > .select-container.dropdown .input-group-addon:last-child {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
 }
 
 div[class^="input-group"].organic {
@@ -35,4 +49,14 @@ div[class^="input-group"].organic {
 
 textarea {
   min-height: 104px;
+}
+
+.required-label {
+  &:before {
+    position: relative;
+    content: "*";
+    color: $ds-color-danger;
+    margin-right: 4px;
+    vertical-align: sub;
+  }
 }

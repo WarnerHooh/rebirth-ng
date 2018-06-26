@@ -28,8 +28,9 @@
 
   <h2>多行文本框</h2>
   <section>
-    <p>交互细节：文本框通用状态及长度范式如下，短文本框（约占可用区域的1/5），中文本框（约占可用区域的1/3），长文本框（约占可用区域的1/2）。</p>
+    <p>交互细节 ：padding=8px，可随内容自适应。</p>
     <div class="row form-group">
+      <label class="col-md-2 required-label">多行文本框</label>
       <div class="col-md-6">
         <textarea class="form-control">该配置模板实现基于 Java8 + Maven 构建环境的通用 Dev 流水线，使用该模板请确保在您的项目BulidScript 目录中包含以下文件:
 - 发布制品库相关： assembly.xml, pom.xml
@@ -38,7 +39,129 @@
     </div>
   </section>
 
-  <h2>With icons:</h2>
+  <h2>简单组合</h2>
+  <section>
+    <div>
+      <p>应用场景1 ：「 文本框+按钮 」、「 文本框+下拉选择 」。</p>
+      <form class="form-horizontal clearfix">
+        <div class="col-md-5">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" placeholder="" class="form-control"/>
+              <div class="input-group-btn">
+                <button class="btn btn-primary">添加</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <re-select class="input-group-select" [options]="options" placeholder="请选择"></re-select>
+              <input type="text" placeholder="请输入" class="form-control"/>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br/>
+
+    <div>
+      <p>应用场景2：「 多字段搜索 」交互细节点击搜索按钮执行搜索条件。</p>
+      <form class="form-horizontal clearfix">
+        <div class="form-group">
+          <div class="col-md-4">
+            <label class="control-label pull-left">产品</label>
+            <div class="col-md-10">
+              <input type="text" placeholder="请输入产品" class="form-control"/>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label class="control-label pull-left">流水线</label>
+            <div class="col-md-10">
+              <input type="text" placeholder="请输入流水线" class="form-control"/>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn btn-primary">搜索</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br/>
+
+    <div>
+      <p>应用场景3：「 单字段搜索 」交互细节点击搜索按钮执行搜索，交互UI样式同多字段搜索一致。</p>
+      <form class="form-horizontal clearfix">
+        <label class="pull-left control-label">分层流水线</label>
+        <div class="col-md-3">
+          <div class="input-group">
+            <input class="form-control" placeholder="请输入流水线编号"/>
+            <div class="input-group-btn">
+              <button class="btn btn-primary btn-icon">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br/><br/>
+
+    <div>
+      <p>应用场景4：「 单字段实时搜索 」交互细节 ：实时搜索符合条件的内容。</p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="input-group organic">
+            <input class="form-control" placeholder="请输入流水线编号">
+            <span class="input-group-addon">
+            <i class="fa fa-search"></i>
+          </span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input-group organic">
+            <input class="form-control" placeholder="请输入发布单元名称">
+            <span class="input-group-addon">
+            <i class="fa fa-search"></i>
+          </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/><br/>
+
+    <div>
+      <p>应用场景5：「 表单 」默认宽度500px，标题右对齐，文本框上下间隔16px。</p>
+      <div class="clearfix">
+        <div class="col-md-8">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-md-2 control-label">name 1</label>
+              <div class="col-md-9">
+                <input class="form-control" placeholder="请输入流水线编号"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label">name 2</label>
+              <div class="col-md-9">
+                <input class="form-control" placeholder="请输入流水线编号"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label">long name 3</label>
+              <div class="col-md-9">
+                <input class="form-control" placeholder="请输入流水线编号"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2>With addon:</h2>
   <section>
     <div class="input-group">
       <span class="input-group-addon">@</span>
@@ -58,83 +181,4 @@
       <span class="input-group-addon">.00</span>
     </div>
   </section>
-
-  <h2>Sizing:</h2>
-  <section>
-    <div class="input-group input-group-lg">
-      <span class="input-group-addon">@</span>
-      <input class="form-control" placeholder="Username">
-    </div>
-    <br/>
-
-    <div class="input-group">
-      <span class="input-group-addon">@</span>
-      <input class="form-control" placeholder="Username">
-    </div>
-    <br/>
-
-    <div class="input-group input-group-sm">
-      <span class="input-group-addon">@</span>
-      <input class="form-control" placeholder="Username">
-    </div>
-  </section>
-
-  <h2>多字段搜索</h2>
-  <section>
-    <p>交互细节：点击搜索按钮执行搜索条件</p>
-    <form class="form-horizontal clearfix">
-      <div>
-        <label class="pull-left control-label">流水线</label>
-        <div class="col-md-3">
-          <input type="text" class="form-control" placeholder="请输入流水线编号" />
-        </div>
-        <button class="btn btn-primary">
-          <i class="fa fa-search"></i>
-          <span>搜索</span>
-        </button>
-      </div>
-    </form>
-  </section>
-
-  <h2>单字段搜索</h2>
-  <section>
-    <p>交互细节：点击搜索按钮执行搜索，交互UI样式同多字段搜索一致。</p>
-    <form class="form-horizontal clearfix">
-      <label class="pull-left control-label">分层流水线</label>
-      <div class="col-md-3">
-        <div class="input-group">
-          <input class="form-control" placeholder="请输入流水线编号" />
-          <div class="input-group-btn">
-            <button class="btn btn-primary">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </form>
-  </section>
-
-  <h2>单字段实时搜索</h2>
-  <section>
-    <p>交互细节 ：实时搜索符合条件的内容。</p>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="input-group organic">
-          <input class="form-control" placeholder="请输入流水线编号">
-          <span class="input-group-addon">
-            <i class="fa fa-search"></i>
-          </span>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="input-group organic">
-          <input class="form-control" placeholder="请输入发布单元名称">
-          <span class="input-group-addon">
-            <i class="fa fa-search"></i>
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </div>

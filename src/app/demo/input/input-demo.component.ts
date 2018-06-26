@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class InputDemoComponent {
 
+  options = ['选项1', '选项2', '选项3'];
 }
