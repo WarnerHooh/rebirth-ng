@@ -7,10 +7,10 @@ import { CheckboxGroupComponent } from 'rebirth-ng';
 })
 export class CheckboxGroupDemoComponent {
 
-  checked;
+  checked = false;
   yesno = 'YES';
   seasonLabelOptions = ['Spring', 'Summer', 'Autumn', 'Winter'];
-  seasonLabel: string;
+  seasonLabel = 'Summer';
 
   seasonOptions = [
     { label: 'Spring', value: 'SPRING' },

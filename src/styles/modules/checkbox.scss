@@ -1,0 +1,9 @@
+.checkbox-group-horizontal {
+  .checkbox {
+    display: inline-block;
+
+    & + .checkbox {
+      margin-left: 24px;
+    }
+  }
+}

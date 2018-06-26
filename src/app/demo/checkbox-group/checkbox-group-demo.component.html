@@ -1,43 +1,46 @@
 <div class="checkbox-group-demo">
 
+  <h2>多选框基础样式</h2>
   <section>
-    <h4>Checkbox</h4>
+    <p>场景定义：在一组可选项中进行多项选择时。</p>
     <re-checkbox [(ngModel)]="checked" label="Agree"></re-checkbox>
     <pre>{{checked | json}}</pre>
-  </section>
+    <br/>
 
-  <section>
-    <h4>Checkbox with customise value</h4>
+    <p>场景定义：支持自定义value。</p>
     <re-checkbox [(ngModel)]="yesno" label="Agree" checkedValue="YES" unCheckedValue="NO"></re-checkbox>
     <pre>{{yesno | json}}</pre>
+    <br/>
+
+    <p>场景定义：disabled</p>
+    <re-checkbox [(ngModel)]="yesno" label="Agree" [disabled]="true"></re-checkbox>
   </section>
 
+  <h2>多选框组样式</h2>
   <section>
-    <h4>Season string:</h4>
-    <re-checkbox-group [options]="seasonLabelOptions" [(ngModel)]="seasonLabel"></re-checkbox-group>
+    <p>场景定义：多选框组合</p>
+    <re-checkbox-group cssClass="checkbox-group-horizontal" [options]="seasonLabelOptions"
+                       [(ngModel)]="seasonLabel"></re-checkbox-group>
     <pre>{{seasonLabel | json}}</pre>
-  </section>
+    <br/>
 
-  <section>
-    <h4>Season Object:</h4>
+    <p>场景定义：支持对象集合</p>
     <re-checkbox-group [disabledItems]="[seasonOptions[0]]" [options]="seasonOptions"
                        [(ngModel)]="season"></re-checkbox-group>
     <pre>{{season | json}}</pre>
   </section>
 
+  <h2>全选</h2>
   <section>
-    <h4>Season value:</h4>
-
-
+    <p>场景定义：全选/反选</p>
     <re-checkbox-group #checkboxgroup [options]="seasonOptions" [(ngModel)]="seasonValue" [inline]="true"
                        [valueParser]="valueParser"></re-checkbox-group>
-    <div class="button-panel">
-      <button class="btn btn-primary" (click)="selectAll(checkboxgroup, true)">Select All</button>
-      <button class="btn btn-info" (click)="selectAll(checkboxgroup, false)">Unselect All</button>
-      <button class="btn btn-success" (click)="invertAll(checkboxgroup)">Invert Select</button>
+    <div>
+      <button class="btn btn-primary btn-sm" (click)="selectAll(checkboxgroup, true)">Select All</button>
+      <button class="btn btn-info btn-sm" (click)="selectAll(checkboxgroup, false)">Unselect All</button>
+      <button class="btn btn-success btn-sm" (click)="invertAll(checkboxgroup)">Invert Select</button>
     </div>
-
-    <hr>
+    <br/>
     <pre>{{seasonValue | json}}</pre>
   </section>
 
