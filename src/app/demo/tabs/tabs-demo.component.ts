@@ -11,7 +11,6 @@ export class TabsDemoComponent {
     {
       id: 'tab1',
       title: 'home',
-      disabled: true,
       content: `Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
             master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
             keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
@@ -32,7 +31,8 @@ export class TabsDemoComponent {
     },
     {
       id: 'tab3',
-      title: 'Fat',
+      title: 'Others',
+      disabled: true,
       content: `Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny
             pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
             locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid

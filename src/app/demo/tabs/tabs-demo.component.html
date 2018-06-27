@@ -1,9 +1,9 @@
 <div class="rating-demo">
+  <h2>胶囊式标签页</h2>
   <section>
-    <h4>default tabs:</h4>
-
-    <re-tabs [(activeTab)]="tab.activeId">
-      <re-tab id="tab1" title="Home">
+    <p>场景定义：用于表格页头平级内容的收纳与切换。例如场景：流水线展示。</p>
+    <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-capsule">
+      <re-tab id="tab1" title="我的流水线">
         <ng-template reTabContent>
           <p>
             Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
@@ -14,7 +14,7 @@
         </ng-template>
       </re-tab>
 
-      <re-tab id="tab2" title="Profile">
+      <re-tab id="tab2" title="流水线度量">
         <ng-template reTabContent>
           <p>
             Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
@@ -30,11 +30,8 @@
         </ng-template>
       </re-tab>
 
-      <re-tab id="tab3" title="Fat">
+      <re-tab id="tab3" title="其他" [disabled]="true">
         <ng-template reTabContent>
-          <div class="button-panel">
-            <button class="btn btn-warning" (click)="alert('tab3')"> Alert</button>
-          </div>
           <p>
             Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny
             pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
@@ -42,40 +39,20 @@
             8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro
             mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown.
             Pitchfork sustainable tofu synth chambray yr.
-
           </p>
         </ng-template>
       </re-tab>
     </re-tabs>
-
+    <br/>
 
     <pre>{{tab |json}}</pre>
   </section>
 
+  <h2>卡片式标签页</h2>
   <section>
-    <h4>Dynamic justified tabs:</h4>
-
-    <re-tabs [(activeTab)]="tab.activeId" [justified]="true">
-      <re-tab *ngFor="let item of tabItems" [disabled]="item.disabled" [id]="item.id">
-        <ng-template reTabTitle>
-          {{item.title}}
-        </ng-template>
-        <ng-template reTabContent>
-          {{item.content}}
-
-          <hr>
-          Tabs source:
-          <pre>{{tabItems | json}}</pre>
-        </ng-template>
-      </re-tab>
-    </re-tabs>
-  </section>
-
-  <section>
-    <h4>Pills vertical tabs:</h4>
-
-    <re-tabs [(activeTab)]="tab.activeId" type="pills" [vertical]="true">
-      <re-tab *ngFor="let item of tabItems" [id]="item.id">
+    <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：发布单元。</p>
+    <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-card">
+      <re-tab *ngFor="let item of tabItems" [id]="item.id" [disabled]="item.disabled">
         <ng-template reTabTitle>
           {{item.title}}
         </ng-template>
