@@ -101,8 +101,8 @@
   <section>
     <form class="form-horizontal">
       <div class="form-group">
-        <re-mutiple-auto-complete id="languageTags" [(ngModel)]="multipleItems" name="languageTags"
-                                  [minLength]="0"
+        <re-mutiple-auto-complete id="languageTags" cssClass="form-control"
+                                  [(ngModel)]="multipleItems" name="languageTags" [minLength]="0"
                                   [onSearch]="searchWiki" [appendBody]="true"></re-mutiple-auto-complete>
         <pre>{{multipleItems | json}}</pre>
       </div>

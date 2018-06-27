@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.label {
+  background-color: $ds-color-primary;
+  font-weight: normal;
+  padding: 4px 8px;
+  border-radius: 2px;
+
+  i {
+    font-style: normal;
+    font-weight: normal !important;
+  }
+}
