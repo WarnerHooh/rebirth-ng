@@ -11,7 +11,7 @@
               </accordion-heading>
               <ul class="list-group">
                 <li *ngFor="let cmp of coreComponents">
-                  <a [routerLink]="['/component',cmp.name]" routerLinkActive="active" class="list-group-item">
+                  <a [routerLink]="['/design/component',cmp.name]" routerLinkActive="active" class="list-group-item">
                     <span>{{cmp.title}}</span>
                     <span class="title-en">{{cmp.name}}</span>
                   </a>

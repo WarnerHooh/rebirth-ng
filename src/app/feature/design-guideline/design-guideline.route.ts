@@ -8,7 +8,7 @@ export const ROUTER_CONFIG: Routes = [
     children: [{
       path: '',
       pathMatch: 'full',
-      redirectTo: '/design-guideline/principle'
+      redirectTo: 'guideline/principle'
     }]
   },
 ];

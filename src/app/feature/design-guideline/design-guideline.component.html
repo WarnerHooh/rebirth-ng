@@ -10,7 +10,7 @@
             </accordion-heading>
             <ul class="list-group">
               <li *ngFor="let gl of guideline">
-                <a [routerLink]="['/design-guideline', gl.name]" routerLinkActive="active" class="list-group-item">
+                <a [routerLink]="['/design/guideline', gl.name]" routerLinkActive="active" class="list-group-item">
                   <span class="title">{{gl.title}}</span>
                   <span class="title-en">{{gl.name}}</span>
                 </a>

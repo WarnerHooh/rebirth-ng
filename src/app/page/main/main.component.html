@@ -1,0 +1,26 @@
+<div class="app-container">
+  <div class="app-bar">
+    <header>
+      <h1 class="title">
+        <a routerLink="/">
+          DevOps Design <img alt="DevOps Design" src="/assets/images/design-logo.svg">
+        </a>
+      </h1>
+      <div class="main-nav">
+        <a class='main-nav-item' routerLink="/design/getting-started" routerLinkActive="active">
+          <span>首页</span>
+        </a>
+        <a class='main-nav-item' routerLink="/design/guideline" routerLinkActive="active">
+          <span>设计</span>
+        </a>
+        <a class='main-nav-item' routerLink="/design/component" routerLinkActive="active">
+          <span>组件</span>
+        </a>
+        <a class="main-nav-item" target="_blank" href="/apidoc/" routerLinkActive="active">
+          <span>动效</span>
+        </a>
+      </div>
+    </header>
+  </div>
+  <router-outlet></router-outlet>
+</div>
