@@ -1,22 +1,16 @@
 <div class="pagination">
 
+  <h2>默认</h2>
   <section>
-    <h4>default pagination:</h4>
+    <p>场景定义：通用分页</p>
     <re-pagination [total]="pager.total" [pageSize]="pager.pageSize" [(pageIndex)]="pager.pageIndex"
                    (pageIndexChange)="pageChange($event)" [maxItems]="10">
     </re-pagination>
   </section>
 
+  <h2>自定义</h2>
   <section>
-    <h4>Chinese text:</h4>
-    <re-pagination [total]="pager.total" [pageSize]="pager.pageSize" [(pageIndex)]="pager.pageIndex"
-                   (pageIndexChange)="pageChange($event)" [maxItems]="10"
-                   firstLink="首页" lastLink="尾页" preLink="前一页" nextLink="下一页">
-    </re-pagination>
-  </section>
-
-  <section>
-    <h4>Customise:</h4>
+    <p>场景定义：自定义分页显示内容</p>
     <re-pagination [total]="pager.total" [pageSize]="pager.pageSize" [(pageIndex)]="pager.pageIndex"
                    (pageIndexChange)="pageChange($event)" [maxItems]="5"
                    [headTemplate]="headTemplate" [tailTemplate]="tailTemplate">
@@ -29,14 +23,13 @@
 
     <ng-template #tailTemplate>
       <div class="tail">
-        跳至 <input type="number" class="form-control goto-input" [(ngModel)]="gotoPage"
+        跳至 <input type="text" class="form-control goto-input" [(ngModel)]="gotoPage"
                   [ngModelOptions]="{updateOn: 'change'}"
                   (ngModelChange)="goto()">页
       </div>
     </ng-template>
+    <div>
+      <pre>{{pager | json}}</pre>
+    </div>
   </section>
-
-  <div>
-    <pre>{{pager | json}}</pre>
-  </div>
 </div>
