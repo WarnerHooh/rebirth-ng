@@ -58,16 +58,6 @@ textarea {
   min-height: 104px;
 }
 
-.required-label {
-  &:before {
-    position: relative;
-    content: "*";
-    color: $ds-color-danger;
-    margin-right: 4px;
-    vertical-align: sub;
-  }
-}
-
 .form-input-sm, .form-input-md, .form-input-lg {
   &:not(.input-group) {
     display: inline-block;

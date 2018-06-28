@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .search-form {
   display: flex;
   flex-direction: row;
@@ -15,11 +17,23 @@
 }
 
 label {
+  font-weight: normal;
+
   + *[class*="col-"] {
     padding-left: 8px;
   }
 
   &[class*="col-"] {
     padding-right: 0;
+  }
+
+  &.required-label {
+    &:before {
+      position: relative;
+      content: "*";
+      color: $ds-color-danger;
+      margin-right: 4px;
+      vertical-align: sub;
+    }
   }
 }

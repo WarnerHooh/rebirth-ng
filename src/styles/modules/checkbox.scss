@@ -1,9 +1,110 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+$margin-gap: 16px;
+
 .checkbox-group-horizontal {
   .checkbox {
     display: inline-block;
 
     & + .checkbox {
-      margin-left: 24px;
+      margin-left: 16px;
     }
   }
 }
+
+.checkbox {
+  margin-top: $margin-gap;
+  margin-bottom: $margin-gap;
+}
+
+.checkbox-inline + .checkbox-inline {
+  margin-left: $margin-gap;
+}
+
+input[type="checkbox"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -4px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus:after {
+    border-color: $brand-primary;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -2px;
+    margin-right: 8px;
+    border: 2px solid $ds-color-primary;
+    background-color: $ds-color-white;
+    border-radius: 2px;
+    @include transition(240ms);
+  }
+
+  &:checked {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 6px;
+      display: table;
+      width: 6px;
+      height: 12px;
+      border: 2px solid $ds-color-white;
+      border-top-width: 0;
+      border-left-width: 0;
+      @include rotate(45deg);
+    }
+
+    &:after {
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &:after {
+      background-color: $ds-color-background-gray;
+      border-color: $ds-color-gray-light;
+    }
+
+    &:before {
+      border-color: $ds-color-gray-disabled;
+    }
+  }
+
+  &.determinate:not(:checked) {
+    &:after {
+      border-width: 5px;
+    }
+  }
+
+  &.indeterminate:not(:checked) {
+    &:after {
+      background-color: $ds-color-primary;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      background: #fff;
+      top: 6px;
+      left: 4px;
+    }
+  }
+}
+

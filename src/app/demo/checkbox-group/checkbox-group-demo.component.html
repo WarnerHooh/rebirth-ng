@@ -13,7 +13,8 @@
     <br/>
 
     <p>场景定义：disabled</p>
-    <re-checkbox [(ngModel)]="yesno" label="Agree" [disabled]="true"></re-checkbox>
+    <re-checkbox [(ngModel)]="checked" label="Disabled" [disabled]="true"></re-checkbox>
+    <re-checkbox [(ngModel)]="yesno" label="Disabled" checkedValue="YES" [disabled]="true"></re-checkbox>
   </section>
 
   <h2>多选框组样式</h2>
@@ -32,7 +33,7 @@
 
   <h2>全选</h2>
   <section>
-    <p>场景定义：全选/反选</p>
+    <p>场景定义：全选/反选{{checkboxgroup.isChecked()}}</p>
     <re-checkbox-group #checkboxgroup [options]="seasonOptions" [(ngModel)]="seasonValue" [inline]="true"
                        [valueParser]="valueParser"></re-checkbox-group>
     <div>
@@ -42,6 +43,19 @@
     </div>
     <br/>
     <pre>{{seasonValue | json}}</pre>
+  </section>
+
+  <h2>其他</h2>
+  <section>
+    <p>场景定义：当使用全选功能时可能用到的样式</p>
+    <div class="checkbox-inline">
+      <input type="checkbox" class="determinate" />
+      <label>All</label>
+    </div>
+    <div class="checkbox-inline">
+      <input type="checkbox" class="indeterminate" />
+      <label>Not all</label>
+    </div>
   </section>
 
 </div>
