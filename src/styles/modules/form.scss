@@ -1,0 +1,15 @@
+.search-form {
+  display: flex;
+  flex-direction: row;
+
+  > * + * {
+    margin-left: 16px;
+  }
+}
+
+.form-field-fluid {
+  label +  input[type="text"] {
+    display: inline-block;
+    margin-left: 8px;
+  }
+}

@@ -2,7 +2,7 @@
 
   <h2>单行文本框</h2>
   <section>
-    <p>交互细节：文本框通用状态及长度范式如下，短文本框（约占可用区域的1/5），中文本框（约占可用区域的1/3），长文本框（约占可用区域的1/2）。</p>
+    <p>交互细节：文本框通用状态及长度范式如下，默认撑满整个块级元素。短文本框（约占可用区域的1/5），中文本框（约占可用区域的1/3），长文本框（约占可用区域的1/2）。</p>
     <div class="row form-group">
       <div class="col-md-4">
         <input type="text" placeholder="Normal" class="form-control"/>
@@ -28,6 +28,27 @@
         </div>
       </div>
     </div>
+
+    <div class="form-group">
+      <div class="form-field-fluid">
+        <label class="control-label">短文本框</label>
+        <input type="text" placeholder="长度 240px" class="form-control form-input-sm"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-field-fluid">
+        <label class="control-label">中文本框</label>
+        <input type="text" placeholder="长度 368px" class="form-control form-input-md"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-field-fluid">
+        <label class="control-label">长文本框</label>
+        <input type="text" placeholder="长度 500px" class="form-control form-input-lg"/>
+      </div>
+    </div>
   </section>
 
   <h2>多行文本框</h2>
@@ -51,7 +72,7 @@
         <div class="col-md-5">
           <div class="form-group">
             <div class="input-group">
-              <input type="text" placeholder="" class="form-control"/>
+              <input type="text" placeholder="请输入用户名" class="form-control"/>
               <div class="input-group-btn">
                 <button class="btn btn-primary">添加</button>
               </div>
@@ -61,7 +82,7 @@
           <div class="form-group">
             <div class="input-group">
               <re-select class="input-group-select" iconDown="glyphicon glyphicon-triangle-bottom" [options]="options" placeholder="请选择"></re-select>
-              <input type="text" placeholder="请输入" class="form-control"/>
+              <input type="text" placeholder="请输入用户名" class="form-control"/>
             </div>
           </div>
         </div>
@@ -71,29 +92,21 @@
 
     <div>
       <p>应用场景2：「 多字段搜索 」交互细节点击搜索按钮执行搜索条件。</p>
-      <form class="form-horizontal clearfix">
-        <div class="form-group">
-          <div class="col-md-4">
-            <label class="control-label pull-left">产品</label>
-            <div class="col-md-10">
-              <input type="text" placeholder="请输入产品" class="form-control"/>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <label class="control-label pull-left">流水线</label>
-            <div class="col-md-10">
-              <input type="text" placeholder="请输入流水线" class="form-control"/>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <button class="btn btn-primary">搜索</button>
-          </div>
+      <form class="form-horizontal search-form clearfix">
+        <div class="form-field-fluid">
+          <label class="control-label">产品</label>
+          <input type="text" placeholder="请输入产品" class="form-control form-input-sm"/>
         </div>
+
+        <div class="form-field-fluid">
+          <label class="control-label">流水线</label>
+          <input type="text" placeholder="请输入流水线" class="form-control form-input-sm"/>
+        </div>
+
+        <button class="btn btn-primary">搜索</button>
       </form>
     </div>
-    <br/>
+    <br/><br/>
 
     <div>
       <p>应用场景3：「 单字段搜索 」交互细节点击搜索按钮执行搜索，交互UI样式同多字段搜索一致。</p>

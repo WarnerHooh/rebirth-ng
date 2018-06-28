@@ -67,3 +67,19 @@ textarea {
     vertical-align: sub;
   }
 }
+
+.form-input-sm, .form-input-md, .form-input-lg {
+  display: inline-block;
+}
+
+.form-input-sm {
+  width: 240px;
+}
+
+.form-input-md {
+  width: 368px;
+}
+
+.form-input-lg {
+  width: 500px;
+}

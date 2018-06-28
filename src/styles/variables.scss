@@ -30,7 +30,7 @@ $ds-color-reminding: #fadb14;
 $ds-color-fine: #a0d911;
 $ds-color-success: #52c41a;
 
-// bootstrap
+// bootstrap variable overwrite
 $brand-primary: $ds-color-primary;
 $brand-danger: $ds-color-danger;
 $brand-warning: $ds-color-warning;
@@ -59,6 +59,7 @@ $padding-small-vertical: 5px;
 $padding-small-horizontal: 5px;
 $padding-xs-vertical: 2px;
 $padding-xs-horizontal: 4px;
+$form-group-margin-bottom: 16px;
 $border-radius-base: 2px;
 
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
