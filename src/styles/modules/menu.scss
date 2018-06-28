@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+re-menu-bar .navbar {
+  &.menu-primary {
+    background-color: $ds-color-primary;
+
+    .navbar-nav > li > a {
+       color: $ds-color-white;
+    }
+  }
+}

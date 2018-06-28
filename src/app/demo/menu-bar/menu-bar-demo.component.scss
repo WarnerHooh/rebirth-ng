@@ -1,0 +1,12 @@
+:host ::ng-deep {
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    &.navbar-fixed-top {
+      top: 54px;
+    }
+  }
+}
+

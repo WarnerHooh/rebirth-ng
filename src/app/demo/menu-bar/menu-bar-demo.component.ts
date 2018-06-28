@@ -4,11 +4,12 @@ import { MenuBar } from 'rebirth-ng';
 @Component({
   selector: 're-menu-bar-demo',
   templateUrl: './menu-bar-demo.component.html',
+  styleUrls: ['./menu-bar-demo.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MenuBarDemoComponent implements OnInit {
   type: 'navbar-fixed-top' | 'navbar-fixed-bottom' | 'container-fluid'
-    | 'navbar-static-top' | 'navbar-static-bottom' | 'navbar-form' | 'sidebar';
+    | 'navbar-static-top' | 'navbar-static-bottom' | 'navbar-form' | 'sidebar' | '';
   types = ['navbar-fixed-top', 'navbar-fixed-bottom', 'container-fluid', 'navbar-static-top',
     'navbar-static-bottom', 'navbar-form'];
 
@@ -18,6 +19,7 @@ export class MenuBarDemoComponent implements OnInit {
 
   ngOnInit() {
     this.menus = this.demoMenus();
+    this.type = '';
   }
 
   private demoMenus() {
