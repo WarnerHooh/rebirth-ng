@@ -69,7 +69,9 @@ textarea {
 }
 
 .form-input-sm, .form-input-md, .form-input-lg {
-  display: inline-block;
+  &:not(.input-group) {
+    display: inline-block;
+  }
 }
 
 .form-input-sm {

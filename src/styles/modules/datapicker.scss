@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+re-date-picker-popup {
+  .month-view {
+    background-color: $ds-color-background-gray;
+    table.month-view-table {
+      thead {
+        background-color: $ds-color-background-gray;
+      }
+
+      tr.week-header {
+        background-color: $ds-color-primary;
+        td {
+          font-style: normal;
+          color: $ds-color-white;
+          border: 1px solid $ds-color-primary;
+        }
+      }
+
+      .in-month-day .calendar-date:not(.bg-primary) {
+        color: $ds-color-text;
+
+        &:hover {
+          background-color: $ds-color-background-gray;
+        }
+      }
+
+      tfoot .time-picker-view {
+        background-color: $ds-color-background-gray;
+
+        button {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
