@@ -1,9 +1,27 @@
+@import "../../styles/variables";
+
 .breadcrumb {
   padding: 8px 0;
   margin-bottom: 0;
   background-color: transparent;
 
-  a:hover {
-    text-decoration: none;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $ds-color-primary-hover;
+    }
+
+    &:focus, &:active{
+      text-decoration: none;
+      color: $ds-color-primary-active;
+    }
+  }
+
+  > .active {
+    color: $ds-color-gray;
+  }
+
+  li i.breadcrumb-icon {
+    margin-right: 4px !important;
   }
 }
