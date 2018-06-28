@@ -1,13 +1,14 @@
 <div class="ellipsis-demo">
-
+  <h2>基本用法</h2>
   <section>
-    <h4>Text ellipsis:</h4>
-    <re-ellipsis [text]="text"></re-ellipsis>
+    <p>场景定义：当文字太长显示不全时，可以选择保留xx个字符进行截断，并显示tooltip。</p>
+    <re-ellipsis [text]="text" [max]="20"></re-ellipsis>
   </section>
 
+  <h2>其他</h2>
   <section>
-    <h4>Html ellipsis:</h4>
-    <re-ellipsis [text]="html" [html]="true"></re-ellipsis>
+    <p>场景定义：当内容为富文本时进行截取。</p>
+    <re-ellipsis [text]="html" [html]="true" [placement]="'bottom'"></re-ellipsis>
   </section>
 
 </div>
