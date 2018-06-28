@@ -91,7 +91,7 @@ ul {
   }
 
   .doc-viewer-container {
-    flex: 1;
+    width: calc(100vw - 300px);
     z-index: 3;
     max-height: 100vh;
     overflow-y: auto;
