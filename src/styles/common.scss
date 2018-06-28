@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+*:focus {
+  outline: 0;
+}
+
 *[draggable=true] {
   -moz-user-select: none;
   -khtml-user-drag: element;

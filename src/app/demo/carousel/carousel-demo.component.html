@@ -1,6 +1,8 @@
 <div class="carousel-demo">
 
+  <h2>基础用法</h2>
   <section>
+    <p>场景定义：当需要进行slide切换的时候</p>
     <!--safari: width=100%-->
     <re-carousel [interval]="2 * 1000" [(activeSlide)]="activeSlide" #carousel="carousel">
       <ng-template reSlide>
@@ -33,7 +35,8 @@
       </ng-template>
     </re-carousel>
 
-    <hr>
+    <br/><br/>
+
     <div class="button-panel">
       <button class="btn btn-primary" (click)="activeSlide = 1">Active second slide</button>
       <button class="btn btn-primary" (click)="carousel.pauseInterval()">Pause</button>
