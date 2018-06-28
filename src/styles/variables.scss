@@ -26,11 +26,20 @@ $ds-color-blue-light: #e1eeff;
 
 $ds-color-danger: #f5222d;
 $ds-color-warning: #fa8c16;
+$ds-color-reminding: #fadb14;
+$ds-color-fine: #a0d911;
+$ds-color-success: #52c41a;
 
 // bootstrap
 $brand-primary: $ds-color-primary;
 $brand-danger: $ds-color-danger;
+$brand-warning: $ds-color-warning;
+$brand-success: $ds-color-success;
+
 $state-danger-text: $ds-color-danger;
+$state-warning-text: $ds-color-warning;
+$state-success-text: $ds-color-success;
+
 $body-bg: $ds-color-background;
 $dropdown-link-hover-bg: $ds-color-primary;
 $dropdown-link-hover-color: $ds-color-white;
