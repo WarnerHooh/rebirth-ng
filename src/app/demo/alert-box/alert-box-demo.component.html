@@ -1,33 +1,45 @@
 <div class="alert-box-demo">
 
-  <h2>Different type</h2>
+  <h2>不同类型消息提示</h2>
   <section>
-    <p>Info alert:</p>
-    <re-alert-box>
-      <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super
-      important.
-    </re-alert-box>
-
-    <p>Success alert:</p>
+    <p>场景定义：成功</p>
     <re-alert-box type="success">
       <strong>Well done!</strong> You successfully read this important alert message.
     </re-alert-box>
 
-    <p>Warning alert:</p>
+    <p>场景定义：警告</p>
     <re-alert-box type="warning">
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </re-alert-box>
 
-    <p>Danger alert</p>
+    <p>场景定义：出错</p>
     <re-alert-box type="danger">
-      <span class="fa fa-exclamation-circle" aria-hidden="true"></span> <strong>Oh snap!</strong> Change a
-      few things up and try submitting again.
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </re-alert-box>
   </section>
 
-  <h2>Closeable alert</h2>
+  <h2>不同大小的消息提示</h2>
   <section>
-    <p>Auto disappear:</p>
+    <p>场景定义：宽度自适应</p>
+    <re-alert-box type="success" cssClass="alert-adjust">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </re-alert-box>
+
+    <p>场景定义：普通提示</p>
+    <re-alert-box type="danger" cssClass="alert-lg">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </re-alert-box>
+
+    <p>场景定义：较小提示</p>
+    <re-alert-box type="warning" cssClass="alert-sm">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </re-alert-box>
+
+  </section>
+
+  <h2>可关闭的消息提示</h2>
+  <section>
+    <p>场景定义：自动消失</p>
     <div class="checkbox">
       <label>
         <input type="checkbox" [(ngModel)]="autoDisappear" (change)="autoDisappearChange()"/>Auto disappear after 2s.

@@ -71,7 +71,7 @@ export class DemoConfigService {
     },
     {
       name: 'AlertBox',
-      title: '弹窗',
+      title: '消息提示',
       directory: 'alert-box',
       cmp: AlertBoxDemoComponent,
       readMe: require('!html-loader!markdown-loader!../../demo/alert-box/README.md'),

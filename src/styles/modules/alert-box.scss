@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.alert {
+  color: $ds-color-white;
+  padding: 12px;
+
+  &.alert-adjust {
+    display: inline-block;
+  }
+
+  &.alert-sm {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .close {
+    color: $ds-color-white;
+    opacity: 1;
+    right: 0;
+  }
+}
