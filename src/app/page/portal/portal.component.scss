@@ -69,15 +69,12 @@ $margin-gap: 48px;
     height: 60px;
     border-radius: 35px;
     margin-top: $margin-gap;
-    span {
-      transition: all 0.3s ease-out;
-    }
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-out;
 
     &:hover {
-      span {
-        margin-right: -6px;
-        transition: all 0.3s ease-in;
-      }
+      background-color: rgba(255, 255, 255, 1);
+      transition: all 0.3s ease-in;
     }
   }
 }

@@ -25,10 +25,13 @@ $ds-color-blue-medium: #91ceff;
 $ds-color-blue-light: #e1eeff;
 
 $ds-color-danger: #f5222d;
+$ds-color-danger-bg: #ff4d4f;
 $ds-color-warning: #fa8c16;
+$ds-color-warning-bg: #ff7a45;
 $ds-color-reminding: #fadb14;
 $ds-color-fine: #a0d911;
 $ds-color-success: #52c41a;
+$ds-color-success-bg: #73d13d;
 
 // bootstrap variable overwrite
 $brand-primary: $ds-color-primary;
@@ -37,8 +40,11 @@ $brand-warning: $ds-color-warning;
 $brand-success: $ds-color-success;
 
 $state-danger-text: $ds-color-danger;
+$state-danger-bg: $ds-color-danger-bg;
 $state-warning-text: $ds-color-warning;
+$state-warning-bg: $ds-color-warning-bg;
 $state-success-text: $ds-color-success;
+$state-success-bg: $ds-color-success-bg;
 
 $body-bg: $ds-color-background;
 $dropdown-link-hover-bg: $ds-color-primary;
