@@ -8,6 +8,18 @@ import * as Immutable from 'immutable';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BreadcrumbsDemoComponent {
+
+  sample = Immutable.List<Breadcrumb>([
+    {
+      text: '首页',
+      url: 'home',
+    },
+    {
+      text: '订单详情',
+      url: 'orders',
+    }
+  ]);
+
   items = Immutable.List<Breadcrumb>([
     {
       text: 'Home',

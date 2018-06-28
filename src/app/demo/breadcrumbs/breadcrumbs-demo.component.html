@@ -1,8 +1,21 @@
-<div class="breadcrumbs-demo">
-  <re-breadcrumbs [items]="items"></re-breadcrumbs>
-
-  <div class="button-panel">
-    <button class="btn btn-primary" (click)="pushItem()">Push item</button>
-    <button class="btn btn-primary" (click)="removeLastItem()">Remove last item</button>
+<h2>基本用法</h2>
+<section>
+  <p>场景定义：通用面包屑</p>
+  <div class="breadcrumbs-demo">
+    <re-breadcrumbs [items]="sample"></re-breadcrumbs>
   </div>
-</div>
+</section>
+
+<h2>自定义</h2>
+<section>
+  <p>场景定义：带Icon的面包屑，以及动态增删item</p>
+  <div class="breadcrumbs-demo">
+    <re-breadcrumbs [items]="items"></re-breadcrumbs>
+
+    <div class="button-panel">
+      <button class="btn btn-primary" (click)="pushItem()">Push item</button>
+      <button class="btn btn-default" (click)="removeLastItem()">Remove last item</button>
+    </div>
+  </div>
+</section>
+
