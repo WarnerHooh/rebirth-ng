@@ -6,23 +6,25 @@ $ds-color-primary: #0074e4;
 $ds-color-primary-hover: #007ef5;
 $ds-color-primary-active: #005cb3;
 
+$ds-color-white: #ffffff;
+$ds-color-black: #333333;
+
 $ds-color-background: #f3f7fc;
 $ds-color-background-gray: #f9f9f9;
 
-$ds-color-text: #333333;
-$ds-color-text-medium: #666666;
-$ds-color-text-light: #999999;
-$ds-color-text-disabled: #d9d9d9;
-$ds-color-white: #ffffff;
-$ds-color-black: #000000;
-
-$ds-color-gray-dark: #999999;
 $ds-color-gray: #999999;
 $ds-color-gray-light: #e5e5e5;
+$ds-color-gray-disabled: #ced6e0;
 
-$ds-color-green-light: #f3f7fc;
 $ds-color-blue-medium: #91ceff;
 $ds-color-blue-light: #e1eeff;
+
+$ds-color-text: $ds-color-black;
+$ds-color-text-medium: #666666;
+$ds-color-text-light: $ds-color-gray;
+$ds-color-text-disabled: #d9d9d9;
+
+$ds-color-border: $ds-color-gray-light;
 
 $ds-color-danger: #f5222d;
 $ds-color-danger-bg: #ff4d4f;
@@ -56,6 +58,8 @@ $nav-tabs-active-link-hover-border-color: $ds-color-primary;
 
 $tooltip-bg: $ds-color-text;
 $tooltip-max-width: 356px;
+
+//$input-border:
 
 $padding-base-vertical: 8px;
 $padding-base-horizontal: 8px;
