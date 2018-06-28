@@ -85,3 +85,15 @@ textarea {
 .form-input-lg {
   width: 500px;
 }
+
+.input-group .form-control.form-input-sm {
+  @extend .form-input-sm;
+}
+
+.input-group .form-control.form-input-md {
+  @extend .form-input-md;
+}
+
+.input-group .form-control.form-input-lg {
+  @extend .form-input-lg;
+}
