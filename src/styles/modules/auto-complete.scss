@@ -1,18 +1,19 @@
 @import "../../styles/variables";
 
-.input-group input + re-auto-complete-popup {
+.input-group input + re-auto-complete-popup.dropdown-menu {
   width: 100%;
 }
 
 // $grid-gutter-width
-input + re-auto-complete-popup {
+input + re-auto-complete-popup.dropdown-menu {
   width: calc(100% - 30px);
 }
 
 .mutiple-label-auto-complete.form-control {
+  height: auto;
   ul {
     border: none !important;
     background-color: transparent !important;
-    padding: 1px !important;
+    padding: 3px !important;
   }
 }
