@@ -1,7 +1,19 @@
 @import "../../styles/variables";
 
-.carousel-inner {
-  .carousel-caption * {
-    color: $ds-color-white;
+re-carousel {
+  .carousel-inner {
+    .carousel-caption * {
+      color: $ds-color-white;
+    }
+  }
+
+  .carousel-indicators li {
+    margin: 0 4px;
+
+    &.active {
+      margin: 0 4px;
+      width: 10px;
+      height: 10px;
+    }
   }
 }
