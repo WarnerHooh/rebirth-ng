@@ -1,13 +1,37 @@
-<div class="badge-demo button-panel">
-  <a>Inbox
-    <re-badge [text]="87"></re-badge>
-  </a>
+<h2>基本用法</h2>
+<section>
+  <p>场景定义：当需要提示未读消息时</p>
+  <div class="row">
+    <div class="col-md-6 demo">
+      <a>Inbox
+        <re-badge [text]="9" cssClass="badge-danger"></re-badge>
+      </a>
+      <span>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <re-badge [text]="87" cssClass="badge-danger"></re-badge>
+      </span>
 
-  <button class="btn btn-primary" type="button">Inbox
-    <re-badge [text]="87"></re-badge>
-  </button>
-  <span><i class="glyphicon glyphicon-envelope"></i>
-    <re-badge [ngStyle]="{'margin-top': '-1rem', 'margin-left':'-2px', 'background':'#E85656'}"
-              [text]="87"></re-badge></span>
+      <a>Inbox
+        <re-badge [text]="'999+'" cssClass="badge-danger"></re-badge>
+      </a>
 
-</div>
+      <a>Release
+        <re-badge [text]="'NEW'" cssClass="badge-danger"></re-badge>
+      </a>
+
+      <button class="btn btn-primary" type="button">Inbox
+        <re-badge [text]="87"></re-badge>
+      </button>
+    </div>
+  </div>
+</section>
+
+<h2>其他</h2>
+<section>
+  <p>场景定义：当需要提示查看详情时</p>
+  <div>
+    <a>Inbox
+      <re-badge text="" cssClass="badge-dot"></re-badge>
+    </a>
+  </div>
+</section>

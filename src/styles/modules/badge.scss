@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.badge {
+  padding: 3px 6px;
+  font-weight: normal;
+
+  &.badge-dot {
+    position: relative;
+    width: 0;
+    height: 0;
+    padding: 0;
+    min-width: auto;
+    display: inline;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: $ds-color-danger;
+      padding: 0;
+      border-radius: 50%;
+      min-width: auto;
+      position: absolute;
+      top: -4px;
+      right: -6px;
+    }
+  }
+
+  &.badge-danger {
+    background-color: $ds-color-danger;
+  }
+}
+
+
