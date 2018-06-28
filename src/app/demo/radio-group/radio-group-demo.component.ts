@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class RadioGroupDemoComponent {
 
   sexOptions = ['male', 'female'];
-  sex: string;
+  sex = 'male';
 
   seasonOptions = [
     { label: 'Spring', value: 'SPRING' },
@@ -17,7 +17,7 @@ export class RadioGroupDemoComponent {
   ];
 
   season = this.seasonOptions[1];
-  seasonValue: string;
+  seasonValue = 'WINTER';
   valueParser = (item) => item.value;
 }
 

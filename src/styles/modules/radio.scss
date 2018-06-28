@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+$margin-gap: 16px;
+
+.radio {
+  margin-top: $margin-gap;
+  margin-bottom: $margin-gap;
+}
+
+.radio-inline + .radio-inline {
+  margin-left: $margin-gap;
+}
+
+input[type="radio"], .radio input[type="radio"], .radio-inline input[type="radio"] {
+  position: relative;
+  margin-right: 8px;
+  vertical-align: top;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    @include transition(240ms);
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -3px;
+    background-color: $brand-primary;
+    @include scale(0);
+  }
+
+  &:after {
+    position: relative;
+    top: -3px;
+    border: 1px solid $ds-color-primary;
+  }
+
+  &:checked {
+    &:before {
+      @include scale(1);
+    }
+    &:after {
+      background-color: $ds-color-white;
+      @include scale(0.35);
+    }
+  }
+
+  &:disabled {
+    cursor: $cursor-disabled;
+    &:checked:before {
+      background-color: $ds-color-gray-light;
+      border-color: $ds-color-gray-disabled;
+    }
+
+    &:after {
+      border-color: $ds-color-gray-disabled;
+    }
+
+    &:checked:after {
+      border-color: transparent;
+    }
+  }
+
+}

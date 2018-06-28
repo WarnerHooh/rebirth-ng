@@ -1,23 +1,30 @@
 <div class="radio-group-demo">
 
+  <h2>基本用法</h2>
   <section>
-    <h4>Sex:</h4>
+    <p>场景定义：基础使用，基本类型数组作为数据源</p>
     <re-radio-group [options]="sexOptions" [(ngModel)]="sex"></re-radio-group>
     <pre>{{sex | json}}</pre>
   </section>
 
   <section>
-    <h4>Season:</h4>
+    <p>场景定义：对象类型数组作为数据源</p>
     <re-radio-group [disabledItems]="[seasonOptions[0]]" [options]="seasonOptions"
                     [(ngModel)]="season"></re-radio-group>
     <pre>{{season | json}}</pre>
   </section>
-
   <section>
-    <h4>Season with customise value:</h4>
+    <p>场景定义：通过valueParser自定义选项值</p>
     <re-radio-group [options]="seasonOptions" [(ngModel)]="seasonValue" [inline]="true"
                     [valueParser]="valueParser"></re-radio-group>
     <pre>{{seasonValue | json}}</pre>
+  </section>
+
+  <h2>状态</h2>
+  <section>
+    <p>场景定义：disabled状态显示</p>
+    <re-radio-group [options]="sexOptions" [disabledItems]="sexOptions" [(ngModel)]="sex"
+                    [inline]="true"></re-radio-group>
   </section>
 
 

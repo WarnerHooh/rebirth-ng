@@ -3,16 +3,6 @@
 
 $margin-gap: 16px;
 
-.checkbox-group-horizontal {
-  .checkbox {
-    display: inline-block;
-
-    & + .checkbox {
-      margin-left: 16px;
-    }
-  }
-}
-
 .checkbox {
   margin-top: $margin-gap;
   margin-bottom: $margin-gap;
@@ -73,7 +63,7 @@ input[type="checkbox"], .checkbox input[type="checkbox"], .checkbox-inline input
   }
 
   &:disabled {
-    cursor: not-allowed;
+    cursor: $cursor-disabled;
 
     &:after {
       background-color: $ds-color-background-gray;
