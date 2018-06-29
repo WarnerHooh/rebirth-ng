@@ -17,11 +17,34 @@ re-date-picker-popup {
         }
       }
 
-      .in-month-day .calendar-date:not(.bg-primary) {
-        color: $ds-color-text;
+      tbody {
+        tr {
+          td.day {
+            .calendar-date {
+              &:hover:not(.bg-primary) {
+                background-color: $ds-color-gray-light !important;
+                border-color: $ds-color-gray-light !important;
+                color: $ds-color-text !important;
+              }
+            }
 
-        &:hover {
-          background-color: $ds-color-background-gray;
+            &.in-month-day {
+              .calendar-date:not(.bg-primary) {
+                color: $ds-color-text;
+              }
+            }
+
+            &.out-of-month {
+              color: $ds-color-text-light;
+            }
+
+            &.disabled {
+              div.calendar-date:not(.bg-primary) {
+                color: $ds-color-text !important;
+                background-color: $ds-color-gray-disabled !important;
+              }
+            }
+          }
         }
       }
 
