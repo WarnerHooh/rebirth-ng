@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.modal-content {
+  border: none;
+  border-radius: 2px;
+
+  .modal-header {
+    background-color: $ds-color-primary;
+    color: $ds-color-white;
+  }
+
+  .modal-body {
+
+  }
+
+  .modal-footer {
+
+  }
+}
