@@ -3,6 +3,11 @@
 re-select > .select-container.dropdown {
   border-bottom: none;
 
+  .dropdown-menu {
+    width: auto;
+    min-width: 100%;
+  }
+
   .input-group.select-panel {
     input.select-control {
       border: 1px solid $input-border;
