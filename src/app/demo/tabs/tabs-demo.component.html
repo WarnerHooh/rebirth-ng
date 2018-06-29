@@ -62,4 +62,39 @@
       </re-tab>
     </re-tabs>
   </section>
+
+  <h2>标签页大小</h2>
+  <section>
+    <p>场景定义：当用于弹窗时可能会用到较小尺寸的标签。</p>
+    <re-tabs activeTab="tab-sm-1" cssClass="tab-capsule tab-sm">
+      <re-tab id="tab-sm-1" title="我的流水线">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-2" title="你的流水线">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-3" title="其他" [disabled]="true">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+    </re-tabs>
+    <br/>
+
+    <re-tabs activeTab="tab-sm-11" cssClass="tab-card tab-sm">
+      <re-tab id="tab-sm-11" title="Home">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-12" title="Profile">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-13" title="Others" [disabled]="true">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+    </re-tabs>
+  </section>
 </div>

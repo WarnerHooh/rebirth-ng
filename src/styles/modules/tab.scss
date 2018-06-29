@@ -7,6 +7,7 @@ re-tabs {
         > a {
           line-height: 1.3;
           padding: 8px 24px;
+          min-width: 120px;
           margin-right: 4px;
           border-color: $ds-color-primary;
           text-align: center;
@@ -60,6 +61,13 @@ re-tabs {
             margin-left: 1px;
           }
         }
+      }
+    }
+
+    &.tab-sm {
+      > li > a {
+        padding: 4px 8px;
+        min-width: auto;
       }
     }
   }
