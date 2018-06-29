@@ -7,13 +7,39 @@
   .modal-header {
     background-color: $ds-color-primary;
     color: $ds-color-white;
+    padding: 12px 16px;
+
+    .close {
+      color: $ds-color-white;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 
   .modal-body {
-
+    padding: 24px;
   }
 
   .modal-footer {
+    padding: 24px;
+    display: flex;
+    flex-direction: row-reverse;
 
+    .btn {
+      &.btn-warning {
+        @extend .btn-default;
+
+        &:hover, &:focus, &:active, &:active:focus {
+          background-color: $ds-color-white;
+        }
+      }
+
+      + .btn {
+        margin-right: 8px;
+      }
+    }
   }
 }

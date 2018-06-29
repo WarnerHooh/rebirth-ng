@@ -1,8 +1,12 @@
 <div class="dialog-demo button-panel">
-  <button class="btn btn-default" (click)="alert()">Alert</button>
-  <button class="btn btn-default" (click)="confirm()">Confirm</button>
-  <button class="btn btn-default" (click)="prompt()">Prompt</button>
-  <button class="btn btn-default" (click)="promptWithTemplate()">Prompt with template</button>
+  <h2>基本用法</h2>
+  <section>
+    <p>场景定义：当弹窗进行确认等简单行为时使用，常见类型如下。</p>
+    <button class="btn btn-default" (click)="alert()">Alert</button>
+    <button class="btn btn-default" (click)="confirm()">Confirm</button>
+    <button class="btn btn-default" (click)="prompt()">Prompt</button>
+    <button class="btn btn-default" (click)="promptWithTemplate()">Prompt with template</button>
+  </section>
 </div>
 <ng-template #selectPromptTemplate let-option="option" let-formGroup="formGroup">
   <select type="text" class="form-control" id="promptValue" name="promptValue"

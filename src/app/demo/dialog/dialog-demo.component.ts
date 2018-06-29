@@ -21,7 +21,7 @@ export class DialogDemoComponent {
       title: 'I\'m a rebirth alert!',
       content: 'This is <strong>rebirth alert</strong> content.',
       // yes: '确定',
-      icon: 'icon-success',
+      // icon: 'icon-success',
       html: true,
     })
       .subscribe(
