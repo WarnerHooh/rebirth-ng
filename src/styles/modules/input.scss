@@ -9,15 +9,15 @@
   @include form-control-focus($ds-color-primary);
 }
 
-.has-error .form-control{
+.has-error .form-control {
   @include form-control-focus($ds-color-danger);
 }
 
-.has-warning .form-control{
+.has-warning .form-control {
   @include form-control-focus($ds-color-warning);
 }
 
-.has-success .form-control{
+.has-success .form-control {
   @include form-control-focus($ds-color-success);
 }
 
@@ -31,8 +31,8 @@
     width: 30%;
     vertical-align: middle;
 
-    > .select-container.dropdown .input-group.select-panel input.select-control {
-      border-right: 0;
+    > .select-container.dropdown .input-group.select-panel input.select-control:not(:focus) {
+      border-right-width: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -66,6 +66,10 @@ div[class^="input-group"] {
       i {
         width: 16px;
       }
+    }
+
+    .form-control:focus + span i {
+      color: $ds-color-primary;
     }
   }
 }
