@@ -13,13 +13,15 @@
       <re-menu-bar #menu="menuBar" [menuOptions]="menus" [type]="type"></re-menu-bar>
       <re-menu-bar [menuOptions]="menus" cssClass="menu-primary"></re-menu-bar>
 
-      <div class="col-md-12">
+      <div>
         <p>场景定义：不同类型的导航栏</p>
-        <div class="form-group form-input-sm">
-          <select name="dateFormat" class="form-control" [(ngModel)]="type">
-            <option value="">请选择</option>
-            <option *ngFor="let item of types" [ngValue]="item">{{item}}</option>
-          </select>
+        <div class="col-md-12">
+          <div class="form-group form-input-sm">
+            <select name="dateFormat" class="form-control" [(ngModel)]="type">
+              <option value="">请选择</option>
+              <option *ngFor="let item of types" [ngValue]="item">{{item}}</option>
+            </select>
+          </div>
         </div>
       </div>
 
