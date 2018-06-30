@@ -1,19 +1,19 @@
 <div class="flow-step-demo">
+  <h2>基础用法</h2>
   <section>
-    <h4>Arrow:</h4>
+    <p>场景定义：默认箭头类型的步骤条。</p>
     <re-flow-step [(active)]="active" [steps]="steps"></re-flow-step>
-  </section>
+    <br/>
 
-
-  <section>
-    <h4>Dot:</h4>
+    <p>场景定义：点状的步骤条。</p>
     <re-flow-step [(active)]="active" [steps]="steps" type="dot"></re-flow-step>
-  </section>
+    <br/>
 
-  <hr>
-  <div class="button-panel">
-    <button class="btn btn-primary" (click)="active = active + 1">Next step</button>
-    <button class="btn btn-primary" (click)="active = active - 1">Pre step</button>
-  </div>
+    <p>场景定义：前进/后退的交互。</p>
+    <div class="button-panel">
+      <button class="btn btn-default" (click)="active = active - 1">Pre step</button>
+      <button class="btn btn-primary" (click)="active = active + 1">Next step</button>
+    </div>
+  </section>
 </div>
 

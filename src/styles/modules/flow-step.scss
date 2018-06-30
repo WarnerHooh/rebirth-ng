@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+re-flow-step {
+  .arrow i.step-icon {
+    margin-right: 4px;
+  }
+
+  > ul.step-anchor-arrow > li.step {
+    &:first-child .arrow {
+      border-top-left-radius: 2px !important;
+      border-bottom-left-radius: 2px !important;
+    }
+
+    &:last-child .arrow {
+      border-top-right-radius: 2px !important;
+      border-bottom-right-radius: 2px !important;
+    }
+
+    > a.arrow {
+      background-color: $ds-color-background-gray !important;
+      color: $ds-color-gray !important;
+
+      &:after {
+        border-left-color: $ds-color-background-gray !important;
+      }
+
+      &:before {
+        border-left-color: $ds-color-border !important;
+      }
+
+    }
+
+    &.active > a.arrow {
+      background-color: $ds-color-primary !important;
+      border-color: $ds-color-primary !important;
+      color: $ds-color-white !important;
+
+      &:after {
+        border-left-color: $ds-color-primary !important;
+      }
+    }
+
+    &.done > a.arrow {
+      background-color: $ds-color-success-bg !important;
+      color: $ds-color-white !important;
+
+      &:before {
+        border-left-color: $ds-color-white !important;
+      }
+
+      &:after {
+        border-left-color: $ds-color-success-bg !important;
+      }
+    }
+  }
+
+  &[type="dot"] {
+    > ul.step-anchor-dot {
+      &:before {
+        background-color: $ds-color-background-gray !important;
+      }
+
+      > li.step {
+        > a.arrow {
+          color: $ds-color-gray !important;
+
+          &:after {
+            left: 44.5% !important;
+            background-color: $ds-color-border !important;
+          }
+
+          &:before {
+            background-color: $ds-color-background-gray !important;
+          }
+        }
+
+        &.active > a.arrow {
+          color: $ds-color-primary !important;
+
+          &:after {
+            background-color: $ds-color-primary !important;
+          }
+        }
+
+        &.done > a.arrow {
+          color: $ds-color-success !important;
+
+          &:after {
+            background-color: $ds-color-success-bg !important;
+          }
+        }
+      }
+    }
+  }
+}
