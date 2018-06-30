@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+re-slider {
+  div.slider-body {
+    padding: 0 2em !important;
+
+    .slider-container {
+      .slider {
+        .base-line {
+          background-color: $ds-color-gray-light;
+        }
+        .active-line {
+          background-color: $ds-color-primary;
+        }
+      }
+
+      .handle {
+        background-color: $ds-color-primary;
+
+        &:hover {
+          background-color: $ds-color-primary-hover;
+        }
+
+        &:active, &:focus {
+          background-color: $ds-color-primary-active;
+        }
+      }
+
+    }
+
+    .slider-operator-container {
+      .btn {
+        min-width: auto;
+        color: $ds-color-primary;
+        line-height: 1.5;
+
+        &.plus, &.reduce {
+
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
