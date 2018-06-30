@@ -55,7 +55,7 @@ input[type="radio"], .radio input[type="radio"], .radio-inline input[type="radio
     }
     &:after {
       background-color: $ds-color-white;
-      @include scale(0.35);
+      @include scale(0.45);
     }
   }
 
