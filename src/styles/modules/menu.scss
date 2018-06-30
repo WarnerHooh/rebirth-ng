@@ -1,11 +1,41 @@
 @import "../../styles/variables";
 
 re-menu-bar .navbar {
+  .navbar-nav > li {
+    .dropdown-menu {
+      min-width: 100%;
+      width: auto;
+    }
+  }
+
+  &.navbar-default {
+    background-color: $ds-color-background-gray;
+    border-color: $ds-color-border;
+
+    .navbar-nav > li {
+      &.active, &.dropdown.open > a {
+        background-color: $ds-color-gray-light;
+      }
+
+      > a {
+        color: $ds-color-black;
+      }
+    }
+  }
+
   &.menu-primary {
     background-color: $ds-color-primary;
+    border-color: $ds-color-primary;
 
-    .navbar-nav > li > a {
-       color: $ds-color-white;
+    .navbar-nav > li {
+      &.active, &.dropdown.open > a {
+        color: $ds-color-white;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      > a {
+        color: $ds-color-white;
+      }
     }
   }
 }
