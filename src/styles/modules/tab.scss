@@ -1,16 +1,20 @@
 @import "../../styles/variables";
 
+.re-tab-anchor {
+  line-height: 1.3;
+  padding: 8px 24px;
+  min-width: 120px;
+  margin-right: 4px;
+  border-color: $ds-color-primary;
+  text-align: center;
+}
+
 re-tabs {
   .nav-tabs {
     &.tab-capsule, &.tab-card {
       > li {
         > a {
-          line-height: 1.3;
-          padding: 8px 24px;
-          min-width: 120px;
-          margin-right: 4px;
-          border-color: $ds-color-primary;
-          text-align: center;
+          @extend .re-tab-anchor;
         }
 
         &:not(.active) {
@@ -24,18 +28,10 @@ re-tabs {
         &.disabled {
           > a, > a:hover {
             color: $ds-color-text-disabled;
-            border-color: $ds-color-text-disabled;
-            background-color: $ds-color-gray-light;
+            border-color: $ds-color-border;
+            background-color: $ds-color-background-gray;
           }
         }
-      }
-    }
-
-    &.tab-card {
-      > li > a {
-        min-width: 200px;
-        padding-top: 10px;
-        padding-bottom: 10px;
       }
     }
 
@@ -64,11 +60,61 @@ re-tabs {
       }
     }
 
+    &.tab-line {
+      > li {
+        > a {
+          @extend .re-tab-anchor;
+          background-color: $ds-color-white;
+          border: none;
+          color: $ds-color-text;
+          margin-right: 0;
+          min-width: 60px;
+          padding: 8px 24px 4px;
+
+          &:hover {
+            background-color: $ds-color-white;
+          }
+        }
+
+        &.active {
+          > a {
+            border-bottom: 4px solid $ds-color-primary;
+
+            &:hover {
+              border-width: 0 0 4px 0;
+              color: $ds-color-black;
+            }
+          }
+        }
+
+        &.disabled {
+          > a, > a:hover {
+            color: $ds-color-text-disabled;
+          }
+        }
+      }
+    }
+
+    &.tab-lg {
+      > li > a {
+        min-width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+
     &.tab-sm {
       > li > a {
         padding: 4px 8px;
         min-width: auto;
       }
     }
+  }
+
+  .tab-content {
+    padding: 8px 0;
+
+    font-size: 14px;
+    line-height: 22px;
   }
 }

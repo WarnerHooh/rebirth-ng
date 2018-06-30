@@ -43,7 +43,6 @@
         </ng-template>
       </re-tab>
     </re-tabs>
-    <br/>
 
     <pre>{{tab |json}}</pre>
   </section>
@@ -52,6 +51,21 @@
   <section>
     <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：发布单元。</p>
     <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-card">
+      <re-tab *ngFor="let item of tabItems" [id]="item.id" [disabled]="item.disabled">
+        <ng-template reTabTitle>
+          {{item.title}}
+        </ng-template>
+        <ng-template reTabContent>
+          {{item.content}}
+        </ng-template>
+      </re-tab>
+    </re-tabs>
+  </section>
+
+  <h2>线型标签页</h2>
+  <section>
+    <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：发布单元。</p>
+    <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-line">
       <re-tab *ngFor="let item of tabItems" [id]="item.id" [disabled]="item.disabled">
         <ng-template reTabTitle>
           {{item.title}}
@@ -80,7 +94,6 @@
         </ng-template>
       </re-tab>
     </re-tabs>
-    <br/>
 
     <re-tabs activeTab="tab-sm-11" cssClass="tab-card tab-sm">
       <re-tab id="tab-sm-11" title="Home">
@@ -92,6 +105,37 @@
         </ng-template>
       </re-tab>
       <re-tab id="tab-sm-13" title="Others" [disabled]="true">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+    </re-tabs>
+
+    <re-tabs activeTab="tab-sm-21" cssClass="tab-line tab-sm">
+      <re-tab id="tab-sm-21" title="Home">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-22" title="Profile">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-23" title="Others" [disabled]="true">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+    </re-tabs>
+
+    <p>场景定义：当用于页面时可能需要用到较大尺寸的标签。</p>
+    <re-tabs activeTab="tab-sm-41" cssClass="tab-card tab-lg">
+      <re-tab id="tab-sm-41" title="Home">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-42" title="Profile">
+        <ng-template reTabContent>
+        </ng-template>
+      </re-tab>
+      <re-tab id="tab-sm-43" title="Others" [disabled]="true">
         <ng-template reTabContent>
         </ng-template>
       </re-tab>
