@@ -1,0 +1,11 @@
+re-time-picker {
+  .time-picker {
+    > span {
+      margin: 0 8px;
+    }
+
+    input.form-control {
+      text-align: center;
+    }
+  }
+}
