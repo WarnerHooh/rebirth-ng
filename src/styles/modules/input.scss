@@ -1,8 +1,24 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .form-control {
   line-height: 1.57;
   height: 36px;
+  color: $ds-color-black;
+
+  @include form-control-focus($ds-color-primary);
+}
+
+.has-error .form-control{
+  @include form-control-focus($ds-color-danger);
+}
+
+.has-warning .form-control{
+  @include form-control-focus($ds-color-warning);
+}
+
+.has-success .form-control{
+  @include form-control-focus($ds-color-success);
 }
 
 .input-group-addon {
