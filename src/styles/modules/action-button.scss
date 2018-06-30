@@ -23,6 +23,10 @@ re-action-button {
 .action-btn-plain {
   cursor: pointer;
 
+  a:hover {
+    text-decoration: none;
+  }
+
   i {
     margin-left: 6px;
     transition: all 0.2s;

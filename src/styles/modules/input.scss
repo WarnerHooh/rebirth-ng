@@ -23,6 +23,7 @@
 
 .input-group-addon {
   background-color: $ds-color-white;
+  color: $ds-color-text-medium;
 }
 
 .input-group {
@@ -57,7 +58,9 @@ div[class^="input-group"] {
     .input-group-addon {
       position: absolute;
       top: 50%;
-      right: $padding-base-horizontal * 2 + 2;
+      //right: $padding-base-horizontal * 2 + 2;
+      right: 0;
+      width: auto;
       z-index: 10;
       background: transparent;
       border: none;

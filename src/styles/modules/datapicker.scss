@@ -2,6 +2,11 @@
 @import "../../styles/mixins";
 
 re-date-picker-popup {
+  &.dropdown-menu {
+    min-width: 100%;
+    width: auto;
+  }
+
   > div.month-view {
     border-radius: 2px;
     background-color: $ds-color-background-gray !important;
