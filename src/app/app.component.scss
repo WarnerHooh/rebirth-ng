@@ -6,7 +6,7 @@ html {
 
 html, body {
   background: $ds-color-white;
-  font-family: "微软雅黑", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: $ds-font-family;
 }
 
 ul {

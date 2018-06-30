@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+re-accordion {
+  .panel {
+    .panel-heading, .panel-body {
+      padding: 8px 16px;
+    }
+
+    &.panel-plain {
+      box-shadow: none;
+      border-bottom-color: $ds-color-border;
+
+      .panel-heading {
+        display: inline-block;
+        position: relative;
+        color: $ds-color-primary;
+        @extend .glyphicon;
+        @extend .glyphicon-chevron-down;
+
+        &:hover {
+          color: $ds-color-primary-hover;
+        }
+
+        &:focus, &:active {
+          color: $ds-color-primary-active;
+        }
+
+        &:before {
+          position: absolute;
+          right: -14px;
+          transition: all .2s ease-in;
+        }
+
+        re-accordion-header {
+          font-family: $ds-font-family;
+        }
+      }
+
+      .panel-heading, .panel-body {
+        padding: 8px;
+      }
+
+      &.panel-open {
+        .panel-heading {
+          &:before {
+            transform: rotate(180deg);
+            transition: all .2s ease-out;
+          }
+        }
+      }
+    }
+  }
+}
