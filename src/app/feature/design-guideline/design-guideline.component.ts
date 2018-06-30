@@ -19,7 +19,7 @@ export class DesignGuidelineComponent implements OnInit {
       {name: 'color', title: '颜色', html: require('!html-loader!markdown-loader!./guide/color.md')},
       {name: 'icon', title: '图标', html: require('!html-loader!markdown-loader!./guide/icon.md')},
       {name: 'prototype', title: '排版', html: require('!html-loader!markdown-loader!./guide/prototype.md')},
-      {name: 'text', title: '文案', html: require('!html-loader!markdown-loader!./guide/text.md')},
+      // {name: 'text', title: '文案', html: require('!html-loader!markdown-loader!./guide/text.md')},
     ];
   }
 
