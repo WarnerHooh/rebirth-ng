@@ -6,7 +6,7 @@
   <hr/>
 
   <section>
-    <re-tabs class="code-tabs">
+    <re-tabs class="code-tabs" cssClass="tab-line">
       <re-tab id="html" title="HTML">
         <ng-template reTabContent>
           <div class="html" #html>
@@ -35,13 +35,13 @@
           </div>
         </ng-template>
       </re-tab>
-      <re-tab id="api" title="API">
-        <ng-template reTabContent>
-          <div class="api-container">
-            <iframe class="api-frame" [src]="apiHref" frameborder="0"></iframe>
-          </div>
-        </ng-template>
-      </re-tab>
+      <!--<re-tab id="api" title="API">-->
+        <!--<ng-template reTabContent>-->
+          <!--<div class="api-container">-->
+            <!--<iframe class="api-frame" [src]="apiHref" frameborder="0"></iframe>-->
+          <!--</div>-->
+        <!--</ng-template>-->
+      <!--</re-tab>-->
     </re-tabs>
   </section>
 </section>
