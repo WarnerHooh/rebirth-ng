@@ -1,8 +1,12 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 re-date-picker-popup {
-  .month-view {
-    background-color: $ds-color-background-gray;
+  > div.month-view {
+    border-radius: 2px;
+    background-color: $ds-color-background-gray !important;
+    @include popup-box-shadow($ds-color-black);
+
     table.month-view-table {
       thead {
         background-color: $ds-color-background-gray;

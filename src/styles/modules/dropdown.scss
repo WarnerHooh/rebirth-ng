@@ -1,10 +1,13 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .dropdown-menu {
   padding: 0;
   min-width: auto;
   width: 100%;
   margin-top: 8px;
+  border-color: $ds-color-border;
+  @include popup-box-shadow();
 
   & > li > a {
     padding: 8px 16px;
