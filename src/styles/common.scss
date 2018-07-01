@@ -35,6 +35,15 @@ ul {
   padding: 0;
 }
 
+pre {
+  background-color: $ds-color-background-gray;
+  border-color: $ds-color-border;
+}
+
+hr {
+  border-color: $ds-color-border;
+}
+
 .help-text {
   color: $ds-color-text-light;
 }
