@@ -1,6 +1,6 @@
 <div class="draggable-demo">
+  <h2>Draggable</h2>
   <section>
-    <h2>Draggable</h2>
     <re-panel reDraggable style="display: block">
       <re-panel-header reDraggableHandle>
         I am draggable!
@@ -11,9 +11,9 @@
     </re-panel>
   </section>
 
+  <h2>Droppable</h2>
   <section>
-    <h2>Droppable</h2>
-    <div class="row">
+    <div class="clearfix">
       <div class="col-sm-5" style="min-height: 80px;background: #F5F5F5; padding-top: 20px">
         <ul class="list-group">
           <li class="list-group-item" *ngFor="let item of source" reDraggable="groupName" [dragData]="item">
