@@ -16,7 +16,6 @@ export class AppComponent {
 
   constructor(private rebirthConfig: RebirthNGConfig,
               private viewContainerRef: ViewContainerRef) {
-
     this.rebirthConfig.rootContainer = this.viewContainerRef;
     this.rebirthConfig.extend(REBIRTH_NG_I18N_ZHCN);  // i18n
   }
