@@ -6,7 +6,7 @@ import { DocumentRef } from 'rebirth-ng';
 @Component({
   selector: 're-getting-started',
   templateUrl: './getting-started.component.html',
-  styleUrls: ['./getting-started.component.scss']
+  styleUrls: ['../design-guideline/design-guideline.component.scss', './getting-started.component.scss']
 })
 export class GettingStartedComponent implements OnInit {
   gettingStarted: any;

@@ -1,19 +1,29 @@
-.main-logo {
-  width: 100%;
-  margin: 0px 0px 40px 0px;
-  .images {
-    margin: auto;
-    max-width: 100%;
-    max-height: 400px;
-    display: block;
+:host ::ng-deep {
+  .main-logo {
+    width: 100%;
+    margin: 48px 0px;
+
+    .images {
+      margin: auto;
+      max-width: 100%;
+      max-height: 400px;
+      display: block;
+    }
+  }
+
+  .main {
+    background: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    .doc-viewer {
+      padding-bottom: 80px;
+    }
+  }
+
+  .getting-started {
+    ul li {
+      list-style-position: inside;
+    }
   }
 }
 
-.main {
-  background: transparent;
-  max-height: 100vh;
-  overflow-y: auto;
-  .doc-viewer {
-    padding-bottom: 80px;
-  }
-}
