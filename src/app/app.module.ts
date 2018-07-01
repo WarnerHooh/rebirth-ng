@@ -12,11 +12,13 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RebirthRouterReuseStrategy } from 'rebirth-ng';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { PortalComponent } from './page/portal/portal.component';
+import { OverlayBodyDemoComponent } from './demo/overlay/overlay-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortalComponent,
+    OverlayBodyDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { PortalComponent } from './page/portal/portal.component';
     {provide: LocationStrategy, useClass: HashLocationStrategy},
     {provide: RouteReuseStrategy, useClass: RebirthRouterReuseStrategy}
   ],
+  entryComponents: [OverlayBodyDemoComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {

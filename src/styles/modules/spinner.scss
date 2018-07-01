@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.spinner {
+  min-width: 130px;
+  min-height: 130px;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: $ds-color-white;
+  border-radius: 2px;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.loader {
+  margin: 0 auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border: 0.5em solid rgba(255, 255, 255, 0.2);
+  border-left-color: $ds-color-white;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: circling 1.1s infinite linear;
+  animation: circling 1.1s infinite linear;
+
+  & + p {
+    color: $ds-color-white;
+    margin: 8px 0;
+  }
+}
+
+@-webkit-keyframes circling {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circling {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

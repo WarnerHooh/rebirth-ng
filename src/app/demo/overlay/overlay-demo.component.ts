@@ -4,9 +4,9 @@ import { OverlayService } from 'rebirth-ng';
 @Component({
   selector: 're-overlay-body-demo',
   template: `
-    <div>
-      <div class="overlay-demo-logo"></div>
-      <div class="text-center">Rebirth NG overlay!</div>
+    <div class="spinner">
+      <div class="overlay-spinner"></div>
+      <div class="text-center">Loading...</div>
     </div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -18,7 +18,7 @@ export class OverlayBodyDemoComponent {
 @Component({
   selector: 're-overlay-demo',
   templateUrl: './overlay-demo.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OverlayDemoComponent {
 
@@ -26,7 +26,12 @@ export class OverlayDemoComponent {
   }
 
   openOverlay() {
-    this.overlayService.open({ html: `<div class="overlay-demo-logo"></div>` });
+    this.overlayService.open({ html:
+        `<div class="spinner">
+          <div class="loader"></div>
+          <p>数据加载中</p>
+        </div>`
+    });
     setTimeout(() => this.overlayService.close(), 5 * 1000);
   }
 
