@@ -1,0 +1,35 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="cancel()">
+    <span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title">I'm a rebirth modal!</h4>
+</div>
+
+<div class="modal-body">
+  <p class="modal-help">帮助文案<span class="help-text">（提示信息：{{context.text}}）</span></p>
+
+  <re-tabs activeTab="tab1" cssClass="tab-line tab-sm">
+    <re-tab id="tab1" title="列表">
+      <ng-template reTabContent>
+        <div class="main">
+          <ul>
+            <li *ngFor="let op of options">{{op}}</li>
+          </ul>
+        </div>
+      </ng-template>
+    </re-tab>
+
+    <re-tab id="tab2" title="表单">
+      <ng-template reTabContent>
+        <div class="main">
+          <re-checkbox-group #checkboxgroup [options]="options"></re-checkbox-group>
+        </div>
+      </ng-template>
+    </re-tab>
+  </re-tabs>
+  <button class="btn btn-default btn-sm" (click)="show()">Open inner modal!</button>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" (click)="ok()">Ok</button>
+  <button type="button" class="btn btn-warning" (click)="cancel()">Cancel</button>
+</div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { ModalDemoComponent, ModalTestComponent } from './modal-demo.component';
+import { ModalDemoComponent } from './modal-demo.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -14,11 +14,11 @@ import { FormsModule } from '@angular/forms';
   ],
   declarations: [
     ModalDemoComponent,
-    ModalTestComponent
+    // ModalFormComponent
   ],
   entryComponents: [
-    ModalTestComponent,
-    ModalDemoComponent
+    ModalDemoComponent,
+    // ModalFormComponent,
   ]
 })
 export class ModalDemoModule {

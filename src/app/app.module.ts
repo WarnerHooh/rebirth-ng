@@ -13,12 +13,15 @@ import { RebirthRouterReuseStrategy } from 'rebirth-ng';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { PortalComponent } from './page/portal/portal.component';
 import { OverlayBodyDemoComponent } from './demo/overlay/overlay-demo.component';
+import { ModalFormComponent, ModalInnerComponent } from './demo/modal/modal-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortalComponent,
     OverlayBodyDemoComponent,
+    ModalFormComponent,
+    ModalInnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,7 @@ import { OverlayBodyDemoComponent } from './demo/overlay/overlay-demo.component'
     {provide: LocationStrategy, useClass: HashLocationStrategy},
     {provide: RouteReuseStrategy, useClass: RebirthRouterReuseStrategy}
   ],
-  entryComponents: [OverlayBodyDemoComponent],
+  entryComponents: [OverlayBodyDemoComponent, ModalFormComponent, ModalInnerComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {

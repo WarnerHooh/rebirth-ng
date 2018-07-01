@@ -21,6 +21,19 @@
 
   .modal-body {
     padding: 24px;
+
+    .modal-help {
+      margin-bottom: 24px;
+    }
+
+    .main {
+      padding: 16px;
+      border-radius: 2px;
+      background-color: $ds-color-background-gray;
+      border: solid 1px $ds-color-border;
+      max-height: 300px;
+      overflow-y: scroll;
+    }
   }
 
   .modal-footer {

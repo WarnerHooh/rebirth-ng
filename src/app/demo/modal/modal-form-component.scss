@@ -1,0 +1,11 @@
+:host ::ng-deep {
+  .nav-tabs {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+  }
+
+  ul li {
+    list-style-position: inside;
+  }
+}

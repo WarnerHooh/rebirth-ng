@@ -30,3 +30,16 @@ a {
     color: $ds-color-primary-active;
   }
 }
+
+ul {
+  padding: 0;
+}
+
+.help-text {
+  color: $ds-color-text-light;
+}
+
+.help-block {
+  @extend .help-text;
+}
+
