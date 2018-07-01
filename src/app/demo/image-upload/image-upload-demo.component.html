@@ -1,13 +1,15 @@
 <div class="image-upload-demo">
 
+  <h2>基础用法</h2>
   <section>
-    <h4>Multiple - 3:</h4>
-    <re-image-upload uploadParamName="files" [maxItems]="3"
+    <p>场景定义：当需要上传图片时使用。可以同时上传多个图片。</p>
+    <re-image-upload uploadParamName="files" [maxItems]="3" previewWidth="100px" previewHeight="100px"
                      uploadUrl="http://localhost:3000/upload"></re-image-upload>
   </section>
 
+  <h2>其他</h2>
   <section>
-    <h4>Single:</h4>
+    <p>场景定义：可以自定义图片预览框大小，支持单个图片上传限制。</p>
     <re-image-upload previewWidth="336px" previewHeight="160px" uploadParamName="files" [multiple]="false"
                      uploadUrl="http://localhost:3000/upload"></re-image-upload>
   </section>

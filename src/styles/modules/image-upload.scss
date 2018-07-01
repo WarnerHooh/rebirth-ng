@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+re-image-upload {
+  .image-upload {
+    .image-upload-item {
+      border-radius: 2px !important;
+
+      &.image-upload-btn {
+        background-color: $ds-color-background-gray !important;
+        border-color: $ds-color-border !important;
+
+        .image-upload-item-info {
+          color: $ds-color-primary;
+        }
+
+        &:hover {
+          border-color: $ds-color-primary-hover !important;
+
+          .image-upload-item-info {
+            color: $ds-color-primary-hover;
+          }
+        }
+
+        &:active, &:focus {
+          border-color: $ds-color-primary-active !important;
+
+          .image-upload-item-info {
+            color: $ds-color-primary-active;
+          }
+        }
+      }
+    }
+  }
+}
