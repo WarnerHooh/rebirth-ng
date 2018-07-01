@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+re-progress-bar {
+  .progress {
+    background-color: $ds-color-background-gray;
+
+    .progress-bar-success {
+      background-color: $ds-color-success-bg;
+    }
+
+    .progress-bar-warning {
+      background-color: $ds-color-warning-bg;
+    }
+
+    .progress-bar-danger {
+      background-color: $ds-color-danger-bg;
+    }
+  }
+}
