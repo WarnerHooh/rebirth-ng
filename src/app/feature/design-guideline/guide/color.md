@@ -194,3 +194,43 @@
     <p>rgba( 0, 92, 179, 100 )</p>
   </div>
 </div>
+
+## Monitor & Notification Color
+
+<div class="color-guide">
+  <div class="section">
+    <div class="block" style="background-color: #73D13D;"></div>
+    <p>Success</p>
+    <p>#73D13D</p>
+    <p>rgba( 115, 209, 61, 100 )</p>
+  </div>
+  
+  <div class="section">
+    <div class="block" style="background-color: #40A9FF;"></div>
+    <p>Progress</p>
+    <p>#40A9FF</p>
+    <p>rgba( 64, 169, 255, 100 )</p>
+  </div>
+    
+  <div class="section">
+    <div class="block" style="background-color: #FF4D4F;"></div>
+    <p>Error</p>
+    <p>#FF4D4F</p>
+    <p>rgba( 255, 77, 79, 100 )</p>
+  </div>
+  
+  <div class="section">
+    <div class="block" style="background-color: #DFE4EA;"></div>
+    <p>Aborted</p>
+    <p>#DFE4EA</p>
+    <p>rgba( 250, 140, 22, 100 )</p>
+  </div>
+  
+  <div class="section">
+    <div class="block" style="background-color: #FF7A45;"></div>
+    <p>Warnning</p>
+    <p>#FF7A45</p>
+    <p>rgba( 255, 122, 69, 100 )</p>
+  </div>
+  
+</div>
