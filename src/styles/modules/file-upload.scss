@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+re-file-upload {
+  .file-upload-toolbar {
+    .btn-info {
+      @extend .btn-default;
+
+      &:hover, &:focus, &:active, &:active:focus {
+        background-color: $ds-color-white;
+      }
+
+      &[disabled]:hover {
+        border-color: $ds-color-primary;
+      }
+    }
+  }
+}

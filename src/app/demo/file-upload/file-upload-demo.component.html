@@ -1,23 +1,26 @@
 <div class="file-upload-demo">
 
+  <h2>基础用法</h2>
   <section>
-    <h4>Basic:</h4>
+    <p>场景定义：用于文件上传，支持多文件上传。</p>
     <re-file-upload [multiple]="true" (removeFiles)="onRemoveDone($event)" uploadParamName="files"
                     [(ngModel)]="uploadFiles"
                     uploadUrl="http://localhost:3000/upload"></re-file-upload>
 
-    <pre>{{uploadFiles | json}}</pre>
+    <pre *ngIf="uploadFiles">{{uploadFiles | json}}</pre>
   </section>
 
+  <h2>图片上传</h2>
   <section>
-    <h4>Image preview:</h4>
+    <p>场景定义：支持图片上传和预览</p>
     <re-file-upload [multiple]="true" [autoUpload]="true" [accept]="'image/*'" [imgPreview]="true"
                     [previewWidth]="'50px'" uploadParamName="files"
                     uploadUrl="http://localhost:3000/upload"></re-file-upload>
   </section>
 
+  <h2>其他</h2>
   <section>
-    <h4>With customise toolbar:</h4>
+    <p>场景定义：自动上传，以及自定义上传按钮。</p>
     <re-file-upload [autoUpload]="true" [accept]="'image/*'" uploadParamName="files" [multiple]="false"
                     [toolbarTemplate]="toolbarTemplate"
                     uploadUrl="http://localhost:3000/upload"></re-file-upload>
