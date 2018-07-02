@@ -38,6 +38,7 @@
     <p>场景定义：全选/反选{{checkboxgroup.isChecked()}}</p>
     <re-checkbox-group #checkboxgroup [options]="seasonOptions" [(ngModel)]="seasonValue" [inline]="true"
                        [valueParser]="valueParser"></re-checkbox-group>
+    <br/>
     <div>
       <button class="btn btn-primary btn-sm" (click)="selectAll(checkboxgroup, true)">Select All</button>
       <button class="btn btn-info btn-sm" (click)="selectAll(checkboxgroup, false)">Unselect All</button>
