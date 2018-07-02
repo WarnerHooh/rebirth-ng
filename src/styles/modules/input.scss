@@ -77,6 +77,12 @@ div[class^="input-group"] {
   }
 }
 
+.has-error, .has-success, .has-warning {
+  div[class^=input-group].organic .form-control:focus + span i {
+    color: inherit;
+  }
+}
+
 textarea {
   min-height: 104px;
 }
