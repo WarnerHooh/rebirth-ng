@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="906px" height="291px" viewBox="0 0 906 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DSHi-Fi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DevOps-Design---设计---布局" transform="translate(-379.000000, -2408.000000)">
+            <g id="Group-12" transform="translate(379.000000, 2405.000000)">
+                <rect id="Rectangle-27" fill="#0074E5" x="1" y="30" width="630" height="8"></rect>
+                <rect id="Rectangle-27-Copy-6" fill="#F5222D" x="0" y="10" width="630" height="4"></rect>
+                <rect id="Rectangle-27-Copy" fill="#4DC600" x="1" y="54" width="630" height="16"></rect>
+                <rect id="Rectangle-27-Copy-2" fill="#9FDB00" x="1" y="86" width="630" height="24"></rect>
+                <rect id="Rectangle-27-Copy-3" fill="#FBDD00" x="1" y="126" width="630" height="32"></rect>
+                <rect id="Rectangle-27-Copy-4" fill="#FC8C00" x="1" y="174" width="630" height="48"></rect>
+                <rect id="Rectangle-27-Copy-5" fill="#CED6E0" x="1" y="238" width="630" height="56"></rect>
+                <text id="8px-组内间距Normal" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="40">8px   组内间距Normal</tspan>
+                </text>
+                <text id="4px-组内S，常用于图标与文字之间" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="17">4px   组内S，常用于图标与文字之间</tspan>
+                </text>
+                <text id="16px-栏间距" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="66">16px 栏间距</tspan>
+                </text>
+                <text id="24px-组与组之间的间距S" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="103">24px 组与组之间的间距S</tspan>
+                </text>
+                <text id="32px-组与组之间的间距M" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="146">32px 组与组之间的间距M</tspan>
+                </text>
+                <text id="48px-组与组之间的间距L" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="202">48px 组与组之间的间距L</tspan>
+                </text>
+                <text id="56px-组与组之间的间距XL" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="647" y="270">56px 组与组之间的间距XL</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

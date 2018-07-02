@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="572px" height="122px" viewBox="0 0 572 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DSHi-Fi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DevOps-Design---设计---排版" transform="translate(-381.000000, -306.000000)">
+            <g id="Group-4" transform="translate(381.000000, 306.000000)">
+                <path d="M0.5,0.5 L0.5,119.5 L179.5,119.5 L179.5,0.5 L0.5,0.5 Z" id="border" stroke="#DEDEDE"></path>
+                <text id="招-行" font-family="PingFangSC-Regular, PingFang SC" font-size="20" font-weight="normal" fill="#565656">
+                    <tspan x="67.17" y="55">招 行</tspan>
+                </text>
+                <text id="PingFangSC-Regular" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="33.336" y="83">PingFangSC-Regular</tspan>
+                </text>
+                <path d="M196.5,0.5 L196.5,119.5 L375.5,119.5 L375.5,0.5 L196.5,0.5 Z" id="border" stroke="#DEDEDE"></path>
+                <text id="招-行" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#565656">
+                    <tspan x="263.17" y="55">招 行</tspan>
+                </text>
+                <text id="PingFangSC-Medium" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="228.208" y="83">PingFangSC-Medium</tspan>
+                </text>
+                <path d="M392.5,2.5 L392.5,121.5 L571.5,121.5 L571.5,2.5 L392.5,2.5 Z" id="border-copy" stroke="#DEDEDE"></path>
+                <text id="招-行" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="20" font-weight="normal" fill="#565656">
+                    <tspan x="459.041016" y="57">招 行</tspan>
+                </text>
+                <text id="Microsoft-YaHei" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="440.164" y="83">Microsoft YaHei</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

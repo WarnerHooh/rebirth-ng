@@ -12,7 +12,7 @@
 
 图标尺寸与字号对应，12px字号对应12px图标，以此内推，文字与图标之间的间距为8px。
 
-![avatar](imgs/icon_2.png)
+![avatar](imgs/icon_2.svg)
 
 ## 图标命名规则
 
@@ -23,4 +23,4 @@
 
 根据不同的图标形状类型使用不同的轮廓线，可以使图标之间保持一致的视觉效果。
 
-![avatar](imgs/icon_3.png)
+![avatar](imgs/icon_3.svg)

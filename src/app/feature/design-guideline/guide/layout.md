@@ -6,33 +6,33 @@
 
 简洁明快，干扰信息少。随两边留白区域进行最小值的定义，当留白区域到达限定值之后再对中间的主内容区域进行动态缩放。
 
-![avatar](imgs/layout_1.png)
+![avatar](imgs/layout_1.svg)
 
-![avatar](imgs/layout_2.png)
+![avatar](imgs/layout_2.svg)
 
 ## 左右布局
 
 「 T字型布局 」页面结构清晰，主次分明,左侧导航可扩展性强.。常见的做法是将左边的导航栏固定，对右边的工作区域进行动态缩放。
 
-![avatar](imgs/layout_3.png)
+![avatar](imgs/layout_3.svg)
 
 ## 标准内边距
 
 间距：y=8+8*n （n>=0）在 Web 设计中，元素之间的距离，组件或区块的内边距，都需要按照七级网格来进行定位
 
-![avatar](imgs/layout_4.png)
+![avatar](imgs/layout_4.svg)
 
 ## 栏
 
 栏与栏之间的外部间距为 16px，勿使用其它间距。
 
-![avatar](imgs/layout_5.png)
+![avatar](imgs/layout_5.svg)
 
 ## 模块
 
 由元素/组件/其他模块构成。
 
-![avatar](imgs/layout_6.png)
+![avatar](imgs/layout_6.svg)
 
 ## 韵律
 

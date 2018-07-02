@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768px" height="120px" viewBox="0 0 768 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DSHi-Fi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DevOps-Design---设计---排版" transform="translate(-381.000000, -531.000000)">
+            <g id="Group-5" transform="translate(381.000000, 531.000000)">
+                <path d="M196.5,0.5 L196.5,119.5 L375.5,119.5 L375.5,0.5 L196.5,0.5 Z" id="border" stroke="#DEDEDE"></path>
+                <text id="DevOps" font-family="Helvetica-Bold, Helvetica" font-size="20" font-weight="bold" fill="#565656">
+                    <tspan x="248.207031" y="55">DevOps</tspan>
+                </text>
+                <text id="Helvetica-Bold" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="246.448" y="81">Helvetica-Bold</tspan>
+                </text>
+                <path d="M392.5,0.5 L392.5,119.5 L571.5,119.5 L571.5,0.5 L392.5,0.5 Z" id="border" stroke="#DEDEDE"></path>
+                <path d="M588.5,0.5 L588.5,119.5 L767.5,119.5 L767.5,0.5 L588.5,0.5 Z" id="border-copy-3" stroke="#DEDEDE"></path>
+                <path d="M0.5,0.5 L0.5,119.5 L179.5,119.5 L179.5,0.5 L0.5,0.5 Z" id="border-copy-2" stroke="#DEDEDE"></path>
+                <text id="DevOps" font-family="Helvetica" font-size="20" font-weight="normal" fill="#565656">
+                    <tspan x="446.376953" y="55">DevOps</tspan>
+                </text>
+                <text id="DevOps" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" fill="#565656">
+                    <tspan x="643.06" y="55">DevOps</tspan>
+                </text>
+                <text id="DevOps" font-family="ArialMT, Arial" font-size="20" font-weight="normal" fill="#565656">
+                    <tspan x="53.3769531" y="55">DevOps</tspan>
+                </text>
+                <text id="Helvetica" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="457.226" y="81">Helvetica</tspan>
+                </text>
+                <text id="Helvetica-Neue" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="637.446" y="81">Helvetica Neue</tspan>
+                </text>
+                <text id="Arial" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#8A8A8A">
+                    <tspan x="78.228" y="81">Arial</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

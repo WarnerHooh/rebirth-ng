@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="543px" height="132px" viewBox="0 0 543 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="296" y="12" width="100" height="78" rx="2"></rect>
+        <rect id="path-2" x="9" y="10" width="82" height="82" rx="2"></rect>
+        <rect id="path-3" x="443" y="11" width="100" height="78" rx="2"></rect>
+        <circle id="path-4" cx="197.5" cy="50.5" r="49.5"></circle>
+    </defs>
+    <g id="DSHi-Fi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DevOps-Design---设计---图标" transform="translate(-385.000000, -1181.000000)">
+            <g id="Group-14" transform="translate(385.000000, 1181.000000)">
+                <g id="Group-15">
+                    <rect id="Rectangle-31" fill="#DFE4EA" x="0" y="1" width="100" height="100"></rect>
+                    <rect id="Rectangle-31-Copy-2" fill="#DFE4EA" x="148" y="1" width="100" height="100"></rect>
+                    <rect id="Rectangle-31-Copy-3" fill="#DFE4EA" x="295" y="1" width="100" height="100"></rect>
+                    <g id="Rectangle-5-Copy" transform="translate(346.000000, 51.000000) rotate(90.000000) translate(-346.000000, -51.000000) ">
+                        <use fill="#0071E7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#0071E7" stroke-width="6" x="299" y="15" width="94" height="72" rx="2"></rect>
+                    </g>
+                    <rect id="Rectangle-31-Copy" fill="#DFE4EA" x="443" y="0" width="100" height="100"></rect>
+                    <g id="Rectangle-5">
+                        <use fill="#0071E7" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#0071E7" stroke-width="6" x="12" y="13" width="76" height="76" rx="2"></rect>
+                    </g>
+                    <g id="Rectangle-5-Copy">
+                        <use fill="#0071E7" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#0071E7" stroke-width="6" x="446" y="14" width="94" height="72" rx="2"></rect>
+                    </g>
+                    <g id="Oval-3">
+                        <use fill="#0071E7" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <circle stroke="#0071E7" stroke-width="6" cx="197.5" cy="50.5" r="46.5"></circle>
+                    </g>
+                    <text id="正方形外廓" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#333333">
+                        <tspan x="9" y="126">正方形外廓</tspan>
+                    </text>
+                    <text id="圆形外廓" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#333333">
+                        <tspan x="166" y="126">圆形外廓</tspan>
+                    </text>
+                    <text id="纵向巨型外廓" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#333333">
+                        <tspan x="297" y="126">纵向巨型外廓</tspan>
+                    </text>
+                    <text id="横向巨型外廓" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#333333">
+                        <tspan x="445" y="126">横向巨型外廓</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
