@@ -22,12 +22,14 @@
     <p>场景定义：多选框组合</p>
     <re-checkbox-group [options]="seasonLabelOptions"
                        [(ngModel)]="seasonLabel"></re-checkbox-group>
+    <br/>
     <pre>{{seasonLabel | json}}</pre>
     <br/>
 
     <p>场景定义：支持对象集合</p>
     <re-checkbox-group [disabledItems]="[seasonOptions[0]]" [options]="seasonOptions"
                        [(ngModel)]="season"></re-checkbox-group>
+    <br/>
     <pre>{{season | json}}</pre>
   </section>
 
