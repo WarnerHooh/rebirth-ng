@@ -4,7 +4,7 @@
 
 ## 中文字体
 
-![中文字体](./imgs/prototype_1.svg)
+![中文字体](./imgs/prototype_2.svg)
 
 ## 英文字体
 
