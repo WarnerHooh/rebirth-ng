@@ -19,6 +19,10 @@
     height: 32px;
     border-radius: 50%;
     min-width: auto;
+
+    &:after {
+      border-radius: 50%;
+    }
   }
 
   &.btn-icon {
@@ -98,3 +102,10 @@
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   opacity: 0.2;
 }
+
+@include btn-ripple(primary);
+@include btn-ripple(success);
+@include btn-ripple(danger);
+@include btn-ripple(warning);
+@include btn-ripple(info);
+@include btn-ripple(default, $ds-color-primary);
