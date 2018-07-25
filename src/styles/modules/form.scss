@@ -1,5 +1,9 @@
 @import "../../styles/variables";
 
+.btn, input.form-control {
+  line-height: 1.3;
+}
+
 .search-form {
   display: flex;
   flex-direction: row;

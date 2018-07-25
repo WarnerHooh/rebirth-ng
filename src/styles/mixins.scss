@@ -16,7 +16,7 @@
   }
 }
 
-@mixin popup-box-shadow($color: $ds-color-black) {
+@mixin popup-box-shadow($color: $ds-color-base) {
   $color-rgba: color-rgba($color, .24);
   outline: 0;
   @include box-shadow(1px 2px 4px $color-rgba!important);

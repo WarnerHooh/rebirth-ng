@@ -2,9 +2,9 @@
 @import "../../styles/mixins";
 
 .form-control {
-  line-height: 1.57;
-  height: 36px;
-  color: $ds-color-black;
+  //line-height: 1.57;
+  //height: 36px;
+  //color: $ds-color-base;
 
   @include form-control-focus($ds-color-primary);
 }
@@ -22,7 +22,7 @@
 }
 
 .input-group-addon {
-  background-color: $ds-color-white;
+  //background-color: $ds-color-white;
   color: $ds-color-text-medium;
 }
 

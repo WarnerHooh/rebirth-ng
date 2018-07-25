@@ -10,7 +10,7 @@ re-date-picker-popup {
   > div.month-view {
     border-radius: 2px;
     background-color: $ds-color-background-gray !important;
-    @include popup-box-shadow($ds-color-black);
+    @include popup-box-shadow($ds-color-base);
 
     table.month-view-table {
       thead {

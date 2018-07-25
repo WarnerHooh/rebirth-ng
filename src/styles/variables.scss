@@ -1,15 +1,25 @@
 // self scss variables or override 3rd variables;
 
-//$icon-font-path: "../assets/fonts/";
+//== Font
+$ds-font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+$font-size-large: ceil(($font-size-base * 1.25));
+$font-size-small: ceil(($font-size-base * 0.85));
+$line-height-base: 1.571428572;
+$line-height-small: 1.666666666;
+$line-height-large: 1.333333333;
+$line-height-computed: floor(($font-size-base * $line-height-base));
 
-$ds-font-family: "微软雅黑", "Roboto", "Helvetica", "Arial", sans-serif;
+//== Colors
 
 $ds-color-primary: #0074e4;
 $ds-color-primary-hover: #007ef5;
 $ds-color-primary-active: #005cb3;
 
 $ds-color-white: #ffffff;
-$ds-color-black: #333333;
+$ds-color-black: #000000;
+
+$ds-color-base: #333333;
 
 $ds-color-background: #f3f7fc;
 $ds-color-background-gray: #f9f9f9;
@@ -21,7 +31,7 @@ $ds-color-gray-disabled: #ced6e0;
 $ds-color-blue-medium: #91ceff;
 $ds-color-blue-light: #e1eeff;
 
-$ds-color-text: $ds-color-black;
+$ds-color-text: $ds-color-base;
 $ds-color-text-medium: #666666;
 $ds-color-text-light: $ds-color-gray;
 $ds-color-text-disabled: #d9d9d9;
@@ -42,6 +52,8 @@ $brand-primary: $ds-color-primary;
 $brand-danger: $ds-color-danger;
 $brand-warning: $ds-color-warning;
 $brand-success: $ds-color-success;
+
+$link-hover-color: $ds-color-primary-hover;
 
 $state-danger-text: $ds-color-danger;
 $state-danger-bg: $ds-color-danger-bg;
@@ -68,12 +80,59 @@ $padding-base-vertical: 8px;
 $padding-base-horizontal: 8px;
 $padding-large-vertical: 10px;
 $padding-large-horizontal: 10px;
-$padding-small-vertical: 5px;
-$padding-small-horizontal: 5px;
+$padding-small-vertical: 4px;
+$padding-small-horizontal: 4px;
 $padding-xs-vertical: 2px;
 $padding-xs-horizontal: 4px;
 $form-group-margin-bottom: 16px;
 $border-radius-base: 2px;
+$border-radius-large: 4px;
+$border-radius-small: 1px;
+
+//== Table
+$table-condensed-cell-padding: 4px;
+$table-border-color: $ds-color-border;
+
+//== Button
+$btn-default-color: $ds-color-primary;
+$btn-default-bg: $ds-color-white;
+$btn-default-border: $ds-color-primary;
+
+$btn-primary-color: $ds-color-white;
+$btn-primary-bg: $ds-color-primary;
+$btn-primary-border: $ds-color-primary;
+
+$btn-success-color: $ds-color-white;
+$btn-success-bg: $ds-color-success-bg;
+$btn-success-border: $ds-color-success-bg;
+
+$btn-warning-color: $ds-color-white;
+$btn-warning-bg: $ds-color-warning-bg;
+$btn-warning-border: $ds-color-warning-bg;
+
+$btn-danger-color: $ds-color-white;
+$btn-danger-bg: $ds-color-danger-bg;
+$btn-danger-border: $ds-color-danger-bg;
+
+//== Link
+$btn-link-disabled-color: $ds-color-text-disabled;
+
+//== Form
+$input-bg-disabled: $ds-color-background-gray;
+$input-color: $ds-color-base;
+$input-border: $ds-color-border;
+$input-border-focus: $ds-color-primary;
+$input-color-placeholder: $ds-color-text-light;
+$input-height-base: floor($font-size-base * $line-height-large + ($padding-base-vertical * 2) + 2);
+$form-group-margin-bottom: 16px;
+
+// ??
+$legend-color: $ds-color-gray;
+$legend-border-color: $ds-color-border;
+
+$input-group-addon-bg: $ds-color-white;
+
+//== Dropdown
 
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
