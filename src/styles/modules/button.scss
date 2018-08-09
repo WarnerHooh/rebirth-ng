@@ -5,7 +5,6 @@
 }
 
 .btn {
-  //border-radius: 2px;
   min-width: 104px;
   //line-height: 1.3;
 
@@ -48,54 +47,32 @@
 }
 
 .btn-primary {
-  //border-color: $ds-color-primary;
-  //&:hover {
-  //  border-color: $ds-color-primary-hover;
-  //  background-color: $ds-color-primary-hover;
-  //}
-  //
-  //&:focus, &:active, &:active:focus {
-  //  border-color: $ds-color-primary-active;
-  //  background-color: $ds-color-primary-active;
-  //}
+  @include ds-button-hover($ds-color-primary-hover);
+  @include ds-button-active($ds-color-primary-active);
 }
 
 .btn-danger {
   @include button-variant($ds-color-white, $ds-color-danger, $ds-color-danger);
+  @include ds-button-hover(lighten($ds-color-danger, 5%));
+  @include ds-button-active(darken($ds-color-danger, 5%));
 }
 
 .btn-warning {
   @include button-variant($ds-color-white, $ds-color-warning, $ds-color-warning);
-}
-
-.btn-default-reset {
-  background-color: $ds-color-white;
-  border-color: $ds-color-primary;
+  @include ds-button-hover(lighten($ds-color-warning, 5%));
+  @include ds-button-active(darken($ds-color-warning, 5%));
 }
 
 .btn-default {
-  @extend .btn-default-reset;
-  &:hover, &:focus, &:active, &:active:focus, &.disabled:hover, &[disabled]:hover {
-    @extend .btn-default-reset;
-  }
+  @include button-variant($ds-color-primary, $ds-color-white, $ds-color-primary);
+  @include ds-button-hover($ds-color-primary-hover, $ds-color-white, $ds-color-primary-hover);
+  @include ds-button-active($ds-color-primary-active, $ds-color-white, $ds-color-primary-active);
 }
 
-.btn-default {
-  color: $ds-color-primary;
-
-  &.btn-active, &.btn-active[disabled]:hover  {
-    border-color: $ds-color-text;
-    color: $ds-color-text;
-  }
-
-  &:hover, &.btn-active:hover {
-    border-color: $ds-color-primary-hover;
-    color: $ds-color-primary-hover;
-  }
-
-  &:focus, &:active, &:active:focus {
-    border-color: $ds-color-primary-active;
-    color: $ds-color-primary-active;
+.btn-active {
+  &, &[disabled]:hover {
+    border-color: $ds-color-black;
+    color: $ds-color-black;
   }
 }
 

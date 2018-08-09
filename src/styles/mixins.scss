@@ -54,3 +54,22 @@
   }
 }
 
+
+@mixin ds-button-hover($border, $background: $border, $color: $ds-color-white) {
+  &:hover {
+    border-color: $border;
+    background-color: $background;
+    color: $color;
+  }
+}
+
+@mixin ds-button-active($border, $background: $border, $color: $ds-color-white) {
+  &:active, &.active, &:focus, .open > &.dropdown-toggle {
+    &, &:focus, &:hover {
+
+      border-color: $border;
+      background-color: $background;
+      color: $color;
+    }
+  }
+}
