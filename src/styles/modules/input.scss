@@ -40,43 +40,6 @@
   }
 }
 
-div[class^="input-group"] {
-  &.organic, &.select-panel {
-    display: block;
-    position: relative;
-
-    .input-group-addon, .form-control {
-      display: block;
-      float: none;
-    }
-
-    .form-control {
-      border-radius: 2px;
-      padding-right: $padding-base-horizontal * 4;
-    }
-
-    .input-group-addon {
-      position: absolute;
-      top: 50%;
-      //right: $padding-base-horizontal * 2 + 2;
-      right: 0;
-      width: auto;
-      z-index: 10;
-      background: transparent;
-      border: none;
-      transform: translateY(-50%);
-
-      i {
-        width: 16px;
-      }
-    }
-
-    .form-control:focus + span i {
-      color: $ds-color-primary;
-    }
-  }
-}
-
 .has-error, .has-success, .has-warning {
   div[class^=input-group].organic .form-control:focus + span i {
     color: inherit;

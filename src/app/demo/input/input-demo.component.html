@@ -14,41 +14,57 @@
     </div>
 
     <div class="row form-group">
-      <div class="col-md-4 has-error">
-        <input type="text" placeholder="Error" class="form-control"/>
-        <p class="help-block">这里显示错误信息提示</p>
+      <div class="col-md-4">
+        <div class="has-error">
+          <input type="text" placeholder="Error" class="form-control"/>
+          <p class="help-block">这里显示错误信息提示</p>
+        </div>
       </div>
 
-      <div class="col-md-4 has-success">
-        <div class="input-group organic">
+      <div class="col-md-4">
+        <div class="has-success has-feedback">
           <input type="text" placeholder="Success" class="form-control"/>
-          <span class="input-group-addon">
+          <span class="form-control-feedback">
             <i class="fa fa-check"></i>
           </span>
         </div>
       </div>
     </div>
 
-    <div class="form-group">
-      <div class="form-field-fluid">
-        <label class="control-label">短文本框</label>
-        <input type="text" placeholder="长度 240px" class="form-control form-input-sm"/>
+    <form class="form-horizontal clearfix">
+      <div class="form-group col-md-12">
+        <div class="clearfix">
+          <div class="pull-left">
+            <label class="control-label">短文本框</label>
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="长度 240px" class="form-control form-input-sm"/>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <div class="form-field-fluid">
-        <label class="control-label">中文本框</label>
-        <input type="text" placeholder="长度 368px" class="form-control form-input-md"/>
+      <div class="form-group col-md-12">
+        <div class="clearfix">
+          <div class="pull-left">
+            <label class="control-label">中文本框</label>
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="长度 368px" class="form-control form-input-md"/>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <div class="form-field-fluid">
-        <label class="control-label">长文本框</label>
-        <input type="text" placeholder="长度 500px" class="form-control form-input-lg"/>
+      <div class="form-group col-md-12">
+        <div class="clearfix">
+          <div class="pull-left">
+            <label class="control-label">长文本框</label>
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="长度 500px" class="form-control form-input-lg"/>
+          </div>
+        </div>
       </div>
-    </div>
+    </form>
   </section>
 
   <h2>多行文本框</h2>
@@ -92,27 +108,30 @@
 
     <div>
       <p>应用场景2：「 多字段搜索 」交互细节点击搜索按钮执行搜索条件。</p>
-      <form class="form-horizontal search-form clearfix">
-        <div class="form-field-fluid">
+      <form class="form-inline row">
+        <div class="form-group">
           <label class="control-label">产品</label>
-          <input type="text" placeholder="请输入产品" class="form-control form-input-sm"/>
+          <input type="text" placeholder="请输入产品" class="form-control"/>
         </div>
 
-        <div class="form-field-fluid">
+        <div class="form-group">
           <label class="control-label">流水线</label>
-          <input type="text" placeholder="请输入流水线" class="form-control form-input-sm"/>
+          <input type="text" placeholder="请输入流水线" class="form-control"/>
         </div>
 
-        <button class="btn btn-primary">搜索</button>
+        <div class="form-group">
+          <button class="btn btn-primary">搜索</button>
+        </div>
       </form>
     </div>
     <br/><br/>
 
     <div>
       <p>应用场景3：「 单字段搜索 」交互细节点击搜索按钮执行搜索，交互UI样式同多字段搜索一致。</p>
-      <form class="form-horizontal clearfix">
-        <label class="pull-left control-label">分层流水线</label>
-        <div class="col-md-3">
+      <form class="form-inline row">
+        <div class="form-group">
+          <label class="control-label">分层流水线</label>
+
           <div class="input-group">
             <input class="form-control form-input-sm" placeholder="请输入流水线编号"/>
             <div class="input-group-btn">
@@ -130,19 +149,19 @@
       <p>应用场景4：「 单字段实时搜索 」交互细节 ：实时搜索符合条件的内容。</p>
       <div class="row">
         <div class="col-md-3">
-          <div class="input-group organic form-input-sm">
+          <div class="form-group has-feedback">
             <input class="form-control" placeholder="请输入流水线编号">
-            <span class="input-group-addon">
-            <i class="fa fa-search"></i>
-          </span>
+            <span class="form-control-feedback">
+              <i class="fa fa-search"></i>
+            </span>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="input-group organic form-input-sm">
+          <div class="form-group has-feedback">
             <input class="form-control" placeholder="请输入发布单元名称">
-            <span class="input-group-addon">
-            <i class="fa fa-search"></i>
-          </span>
+            <span class="form-control-feedback">
+              <i class="fa fa-search"></i>
+            </span>
           </div>
         </div>
       </div>
