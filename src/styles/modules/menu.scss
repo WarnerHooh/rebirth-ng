@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../styles/common";
 
 re-menu-bar .navbar {
   .navbar-nav > li {
@@ -30,7 +30,7 @@ re-menu-bar .navbar {
     .navbar-nav > li {
       &.active, &.dropdown.open > a {
         color: $ds-color-white;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: color-rgba($ds-color-white, 0.2);
       }
 
       > a {

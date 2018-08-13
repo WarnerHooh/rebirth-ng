@@ -1,5 +1,13 @@
-.pagination > li > a {
-  min-width: 36px;
-  text-align: center;
-  line-height: 1.3;
+@import "../variables";
+
+.pagination > li {
+  & > a {
+    min-width: 36px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  &.disabled > a {
+    cursor: $cursor-disabled !important;
+  }
 }

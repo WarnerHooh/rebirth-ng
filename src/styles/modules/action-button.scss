@@ -28,9 +28,10 @@ re-action-button {
   }
 
   i {
+    top: 0;
     margin-left: 6px;
     transition: all 0.2s;
-    vertical-align: text-top;
+    vertical-align: middle;
   }
 
   &.open {
