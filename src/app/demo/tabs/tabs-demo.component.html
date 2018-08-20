@@ -1,9 +1,9 @@
 <div class="rating-demo">
   <h2>胶囊式标签页</h2>
   <section>
-    <p>场景定义：用于表格页头平级内容的收纳与切换。例如场景：流水线展示。</p>
+    <p>场景定义：用于表格页头平级内容的收纳与切换。例如场景：系统展示。</p>
     <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-capsule">
-      <re-tab id="tab1" title="我的流水线">
+      <re-tab id="tab1" title="我的系统">
         <ng-template reTabContent>
           <p>
             Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
@@ -14,7 +14,7 @@
         </ng-template>
       </re-tab>
 
-      <re-tab id="tab2" title="流水线度量">
+      <re-tab id="tab2" title="系统度量">
         <ng-template reTabContent>
           <p>
             Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
@@ -49,7 +49,7 @@
 
   <h2>卡片式标签页</h2>
   <section>
-    <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：发布单元。</p>
+    <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：系统。</p>
     <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-card">
       <re-tab *ngFor="let item of tabItems" [id]="item.id" [disabled]="item.disabled">
         <ng-template reTabTitle>
@@ -64,7 +64,7 @@
 
   <h2>线型标签页</h2>
   <section>
-    <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：发布单元。</p>
+    <p>场景定义：用于容器顶部，需要一点额外的样式覆盖。例如场景：系统。</p>
     <re-tabs [(activeTab)]="tab.activeId" cssClass="tab-line">
       <re-tab *ngFor="let item of tabItems" [id]="item.id" [disabled]="item.disabled">
         <ng-template reTabTitle>
@@ -81,11 +81,11 @@
   <section>
     <p>场景定义：当用于弹窗时可能会用到较小尺寸的标签。</p>
     <re-tabs activeTab="tab-sm-1" cssClass="tab-capsule tab-sm">
-      <re-tab id="tab-sm-1" title="我的流水线">
+      <re-tab id="tab-sm-1" title="我的系统">
         <ng-template reTabContent>
         </ng-template>
       </re-tab>
-      <re-tab id="tab-sm-2" title="你的流水线">
+      <re-tab id="tab-sm-2" title="你的系统">
         <ng-template reTabContent>
         </ng-template>
       </re-tab>
